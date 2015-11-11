@@ -1,0 +1,12 @@
+{
+    "API_URL": "http://www.topivi.com:3001/api",
+    "APP_KEY": "d7c7ce69d618446d6a84081d62682018",
+    "STORAGE_KEYS": {
+        "apps": "home_apps",
+        "home_info": "home_info",
+        "today_weather": "home_today_weather",
+        "all_weather": "home_all_weather",
+        "today_oil": "home_today_city_oil"
+    },
+    "SOCKET_HOST": "localhost"
+}

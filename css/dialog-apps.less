@@ -1,0 +1,375 @@
+@import "basic";
+
+@color-wheel-tip: #1dbabe;
+@color-wheel-tip-active: #e9342b;
+
+@color-weather-big: #8be8f2;
+@color-weather-small: #41787d;
+@color-weather-item-border: #41787d;
+@color-weather-active-temperature: #CBEBEC;
+
+@color-oil-main: #1dbabe;
+@color-oil-darker: #40757b;
+@color-oil-header-border: #91ACAA;
+@color-oil-footer-tips: #e63232;
+
+.dialog-apps {
+  .fill-parent;
+  &.wheel-press {
+    width: 100%;
+    height: 100%;
+    background-image: url('@{img-base}/dialog-apps/wheel-press/bg.gif');
+    .tip {
+      .height(65);
+      &.left {
+        .l-center(151);
+        .data {
+          text-align: left;
+        }
+      }
+      &.right {
+        .r-center(151);
+        .data {
+          text-align: right;
+        }
+      }
+      &.front {
+        .top(25);
+      }
+      &.back {
+        .top(265);
+        .height(40);
+      }
+      .value {
+        .font-size(44);
+        .line-height(40, 44);
+        color: @color-wheel-tip;
+      }
+      .unit {
+        position: relative;
+        .top(-13);
+        .left(2);
+        .font-size(20);
+        color: @color-wheel-tip;
+      }
+      .line {
+        .flow-bottom(25);
+      }
+      &.front.left {
+        .margin-left(-255);
+        .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/lv_03.png');
+        }
+        &.active .line,
+        &:active .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/hong_03.png');
+        }
+      }
+      &.front.right {
+        .margin-right(-240);
+        .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/lv_05.png');
+        }
+        &.active .line,
+        &:active .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/hong_05.png');
+        }
+      }
+      &.back.left {
+        .margin-left(-280);
+        .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/lv_10.png');
+        }
+        &.active .line,
+        &:active .line {
+            background-image: url('@{img-base}/dialog-apps/wheel-press/hong_10.png');
+        }
+      }
+      &.back.right {
+        .margin-right(-265);
+        .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/lv_13.png');
+        }
+        &.active .line,
+        &:active .line {
+          background-image: url('@{img-base}/dialog-apps/wheel-press/hong_13.png');
+        }
+      }
+      &.active,
+      &:active {
+        .value,
+        .unit {
+          color: @color-wheel-tip-active;
+        }
+      }
+    }
+  }
+  &.weather {
+    .width(285 * 2 + 108 * 3);
+    background-image: url('@{img-base}/dialog-apps/weather/BG_03.png');
+    .item {
+      .width(110);
+      height: 100%;
+      float: left;
+      display: block;
+      border-right: 1px solid @color-weather-item-border;
+      background-image: url('@{img-base}/dialog-apps/weather/BG1_1.png');
+      .small {
+        color: @color-weather-small;
+        display: block;
+        height: 100%;
+        .top-info {
+          .margin-top(20);
+          .month-date {
+            .margin-right(3);
+          }
+        }
+        .weather-icon {
+          position: relative;
+          .top(150);
+          .width(154);
+          .height(116)
+        }
+      }
+      .big {
+        height: 100%;
+        color: @color-weather-big;
+        display: none;
+        .top-info {
+          .margin-top(15);
+          .left-part {
+            float: left;
+            text-align: left;
+            .padding-left(8);
+          }
+          .right-part {
+            float: right;
+            text-align: right;
+            .padding-top(5);
+            .padding-right(18);
+          }
+          .city-icon {
+            display: inline-block;
+            .width(14);
+            .height(19);
+            .margin-right(5);
+            background-image: url('@{img-base}/dialog-apps/weather/dingwei.png');
+          }
+          .city {
+            .font-size(22);
+          }
+          .date {
+            .font-size(18);
+          }
+          .day {
+            .font-size(17);
+          }
+        }
+        .status {
+          .margin-top(10, 24);
+          .padding-right(18, 24);
+          .font-size(24);
+          text-align: right;
+        }
+        .temperature {
+          .padding-right(18);
+          text-align: right;
+          .height(80);
+          .line-height(80);
+          .value {
+            .font-size(94);
+            color: @color-weather-active-temperature;
+          }
+          .unit {
+            position: relative;
+            .top(-52, 26);
+            .font-size(26);
+          }
+        }
+        .weather-icon {
+          position: relative;
+          .top(-10);
+          .width(154);
+          .height(143);
+          .margin-left(10);
+        }
+        .temperature-interval {
+          position: relative;
+          .bottom(10, 18);
+          .padding-left(18, 18);
+          .font-size(18);
+          .temperature-icon {
+            position: relative;
+            .top(2, 18);
+            display: inline-block;
+            .width(15, 18);
+            .height(27, 18);
+            .margin-right(5, 18);
+            background-image: url('@{img-base}/dialog-apps/weather/wenduji.png');
+          }
+        }
+      }
+      &.active {
+        .width(285);
+        background-image: url('@{img-base}/dialog-apps/weather/kuang_mid.png');
+        .small {
+          display: none;
+        }
+        .big {
+          display: block;
+        }
+      }
+      &.left {
+        .small {
+          .padding-right(12);
+          .top-info {
+            text-align: right;
+          }
+          .weather-icon {
+            .left(-48);
+          }
+        }
+      }
+      &.right {
+        .small {
+          .padding-left(12);
+          .top-info {
+            text-align: left;
+          }
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  &.oil {
+    background-image: url('@{img-base}/dialog-apps/oil/BG_03.png');
+    * {
+      overflow: visible;
+    }
+    .wrapper {
+      .padding(20, 32, 0, 32);
+      color: @color-oil-main;
+      .header {
+        .padding-bottom(8);
+        border-bottom: 1px solid @color-oil-header-border;
+        .title {
+          text-align: center;
+          .font-size(32);
+          .unit {
+            .font-size(16, 32);
+            font-weight: normal;
+          }
+        }
+        .date {
+          float: right;
+          .font-size(18);
+          .margin-top(-18);
+        }
+      }
+      .main {
+        font-style: italic;
+        .item {
+          float: left;
+          .margin-top(37);
+          &:nth-child(2n) {
+            float: right;
+          }
+          .label {
+            float: left;
+            .flag {
+              .font-size(32);
+              font-weight: bold;
+              .jinhao {
+                position: relative;
+                .top(-12, 16);
+                .left(5, 16);
+                .font-size(16, 32);
+              }
+            }
+            .name {
+              .font-size(18);
+              color: @color-oil-darker;
+            }
+          }
+          .value {
+            float: left;
+            .width(126);
+            .height(44);
+            .margin-left(18);
+            .padding(9, 25);
+            background-image: url('@{img-base}/dialog-apps/oil/tu_07.png');
+            .number {
+              float: left;
+              .width(27);
+              .height(44);
+              .margin-right(3);
+              &:last-child {
+                .margin-right(0);
+              }
+              &[data-value='0'] {
+                background-image: url('@{img-base}/dialog-apps/oil/0.png');
+              }
+              &[data-value='1'] {
+                background-image: url('@{img-base}/dialog-apps/oil/1.png');
+              }
+              &[data-value='2'] {
+                background-image: url('@{img-base}/dialog-apps/oil/2.png');
+              }
+              &[data-value='3'] {
+                background-image: url('@{img-base}/dialog-apps/oil/3.png');
+              }
+              &[data-value='4'] {
+                background-image: url('@{img-base}/dialog-apps/oil/4.png');
+              }
+              &[data-value='5'] {
+                background-image: url('@{img-base}/dialog-apps/oil/5.png');
+              }
+              &[data-value='6'] {
+                background-image: url('@{img-base}/dialog-apps/oil/6.png');
+              }
+              &[data-value='7'] {
+                background-image: url('@{img-base}/dialog-apps/oil/7.png');
+              }
+              &[data-value='8'] {
+                background-image: url('@{img-base}/dialog-apps/oil/8.png');
+              }
+              &[data-value='9'] {
+                background-image: url('@{img-base}/dialog-apps/oil/9.png');
+              }
+            }
+            .dot {
+              position: relative;
+              .top(44 - 5);
+              float: left;
+              .width(6);
+              .height(5);
+              .margin-right(3);
+              background-image: url('@{img-base}/dialog-apps/oil/p.png');
+            }
+          }
+        }
+      }
+      .cb {
+        clear: both;
+      }
+      .desc {
+        .margin-top(11, 14);
+        .font-size(14);
+        font-style: italic;
+        color: @color-oil-footer-tips;
+        text-align: right;
+      }
+    }
+  }
+}
+.tips.error-tips {
+  width: 100%;
+  .height(30, 24);
+  .padding-top(20, 24);
+  .font-size(24);
+  .line-height(30, 24);
+  text-align: center;
+  color: @color-weather-big;
+}

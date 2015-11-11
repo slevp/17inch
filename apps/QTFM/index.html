@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>在线电台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <script type="text/javascript" src="libs/less/1.7.4/less.js"></script>
+</head>
+<body>
+    <script src="libs/seajs/2.3.0/sea.js"></script>
+    <script src="libs/seajs-text/1.1.0/seajs-text.js"></script>
+    <script>
+        // Set configuration
+        seajs.config({
+            base: './',
+            alias: {
+                "jquery": "libs/jquery/2.1.1/jquery",
+                "underscore": "libs/underscore/1.6.0/underscore",
+                "backbone": "libs/backbone/1.1.2/backbone",
+                "easing": "libs/easing/1.3.0/index",
+                "iscroll": "libs/iscroll/5.1.2/iscroll",
+                "jquery-drag": "libs/jquery-drag/1.0.0/jquery-drag",
+                "jquery-touch": "libs/jquery-touch/1.0.1/jquery-touch",
+                "store": "libs/store/1.3.16/store",
+                "topivi": "libs/topivi/1.0.0/main",
+
+                "ekai/qtfm/1.0.0/main": "src/index"
+            },
+            map: [
+//                ['.js', '-debug.js']
+            ],
+            debug: false
+        });
+        seajs.use(['jquery', 'underscore', 'easing'], function($, _) {
+            _.templateSettings = {
+                escape: /{{-([\s\S]+?)}}/g,
+                evaluate: /{{([\s\S]+?)}}/g,
+                interpolate: /{{=([\s\S]+?)}}/g
+            };
+            seajs.use('ekai/qtfm/1.0.0/main');
+        });
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+</body>
+</html>

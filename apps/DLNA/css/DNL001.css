@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+#BG {
+	width:980px;
+	height:588px;
+	background-image:url(../img/DLN/BG/DLN_001_BG.png);
+}
+
+
+#DLN_001_BG_Connecting {
+    float: left;
+	width:980px;
+	height:588px;
+	background:url(../img/DLN/BG/DLN_001_BG_Connecting.png) no-repeat;
+
+}
+#loading{
+    position:absolute;
+    left:344px;
+    top:338px;
+    width:34px;
+    height:34px;
+    background:url(../css/loading.gif) no-repeat;
+    background-size: 34px 34px;
+    z-index:2;
+
+}
+
+/*#DLN_001_BG_Connecting .Dot {*/
+    /*float: left;*/
+    /*display: none;*/
+	/*width:30px;*/
+	/*height:30px;*/
+	/*background-image:url(../img/DLN/Icon/DLN_001_Icon_Dot.png);*/
+/*}*/
+
+/*#dummy_001_Connecting {*/
+    /*float: left;*/
+	/*margin-left:440px;*/
+	/*width:93px;*/
+	/*height:55px;*/
+	/*background-image:url(../img/DLN/dummy/dummy_001_Connecting.png);*/
+/*}*/
+

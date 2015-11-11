@@ -1,0 +1,16 @@
+{
+    "family": "topivi",
+    "name": "widget",
+    "version": "1.0.0",
+    "spm": {
+        "alias": {
+            "jquery": "jquery",
+            "underscore": "underscore",
+            "jquery-touch": "jquery-touch",
+            "jquery-drag": "jquery-drag",
+            "easing": "easing",
+            "iscroll": "iscroll"
+        },
+        "output": ["main.js"]
+    }
+}

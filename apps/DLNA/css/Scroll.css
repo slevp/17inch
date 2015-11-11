@@ -1,0 +1,95 @@
+#wrapper {
+
+    position: absolute;
+    left:289px;
+    top:78px;
+    height: 371px;
+    width: 376px;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    width: 100%;
+}
+
+#scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+#scroller div {
+    float: left;
+    height: 53px;
+    width: 336px;
+
+
+}
+.shadow{
+    box-shadow: 1px 1px 15px white;
+    border-radius: 10px;
+}
+#scroller li {
+    float: left;
+    padding: 0 0 0 31px;
+    height: 53px;
+    line-height: 53px;
+    color: #979797;
+    width: 245px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+
+}
+.background{
+    background: url(../img/DLN/Icon/DLN_003_Icon_Playing.png) no-repeat 0 15px;
+}
+#scroller span {
+    float: left;
+    height: 53px;
+    line-height: 53px;
+    width: 60px;
+    color: #979797;
+    font-size: 20px;
+}
+
+
+
+
+#wrapper2 {
+    position: absolute;
+    left:289px;
+    top:78px;
+    height: 371px;
+    width: 200px;
+    overflow: hidden;
+}
+
+#scroller2 {
+    position: absolute;
+    width: 100%;
+}
+
+#scroller2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#scroller2 li {
+    padding: 0 0 0 31px;
+    float: left;
+    height: 53px;
+    line-height: 53px;
+    color: #979797;
+    width: 200px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}

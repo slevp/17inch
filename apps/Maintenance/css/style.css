@@ -1,0 +1,592 @@
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.page.home {
+  background-color: black;
+}
+.page.home .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12.3125em;
+  margin-left: -21.34375em;
+  width: 42.6875em;
+  height: 24.625em;
+  overflow: visible;
+}
+.page.home .main .tag {
+  float: left;
+  width: 6.75em;
+  height: 6.75em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #3ad9df;
+}
+.page.home .main .tag:nth-child(5n) {
+  margin-right: 0em;
+}
+.page.home .main .tag .checkTag {
+  position: relative;
+  width: 1.3125em;
+  height: 1.3125em;
+  left: 5.4375em;
+  top: 5.4375em;
+  background-image: url("../img/select_14.png");
+}
+.page.home .main .moreTag {
+  float: left;
+  width: 6.75em;
+  height: 6.75em;
+  margin-right: 2em;
+  border: 1px solid #3ad9df;
+}
+.page.home .main .moreTag:nth-child(2n) {
+  margin-right: 0em;
+}
+.page.home .main .moreTag .checkTag {
+  position: relative;
+  width: 1.3125em;
+  height: 1.3125em;
+  left: 5.4375em;
+  top: 5.4375em;
+  background-image: url("../img/select_14.png");
+}
+.page.home .main .update-btn {
+  position: relative;
+  left: 11.125em;
+  width: 6.875em;
+  height: 2.4375em;
+  background-image: url("../img/none_icon_rec.png");
+}
+.page.home .main .update-btn.active {
+  background-image: url("../img/nml_icon_rec.png");
+}
+.page.home .main .appointment-btn {
+  position: absolute;
+  right: 8.875em;
+  bottom: 0.0625em;
+  width: 6.875em;
+  height: 2.4375em;
+  background-image: url("../img/nml_icon_book.png");
+}
+.page.home .main .shop-btn {
+  position: absolute;
+  right: 0.0625em;
+  width: 6.875em;
+  height: 2.4375em;
+  bottom: 0.0625em;
+}
+.page.home .main .shop-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.page.home .main .shop-btn .btn-img {
+  width: 6.875em;
+  height: 2.4375em;
+  background-image: url("../img/exe_icon_4s.png");
+}
+.page.home .main .shop-btn .btn-img:active {
+  background-image: url("../img/nml_icon_4s.png");
+}
+.page.shop {
+  background-image: url("../img/4S_bg.png");
+}
+.page.shop .repair-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8.1875em;
+  margin-left: -20.9375em;
+  width: 41.875em;
+  height: 16.375em;
+  float: right;
+}
+.page.shop .repair-page .my-shop {
+  width: 41.875em;
+  height: 1.6875em;
+}
+.page.shop .repair-page .my-shop .my-icon {
+  float: left;
+  width: 1.5625em;
+  height: 1.6875em;
+  background-image: url("../img/4S_home.png");
+}
+.page.shop .repair-page .my-shop .my-title {
+  float: left;
+  margin-left: 0.625em;
+  height: 1.6875em;
+  width: 5.5em;
+  line-height: 1.6875em;
+  font-size: 1.25em;
+  color: #339396;
+}
+.page.shop .repair-page .my-shop .stop-information {
+  float: left;
+  line-height: 1.6875em;
+  font-size: 1.125em;
+  color: #339396;
+}
+.page.shop .repair-page .column {
+  float: left;
+  width: 29.0625em;
+  height: 2.75em;
+  margin-top: 2.25em;
+}
+.page.shop .repair-page .column .icon {
+  float: left;
+  margin-top: 0.375em;
+  width: 1.5625em;
+  height: 1.6875em;
+}
+.page.shop .repair-page .column .title {
+  float: left;
+  height: 2.2em;
+  width: 4.35em;
+  line-height: 2.2em;
+  font-size: 1.25em;
+  margin-left: 0.625em;
+  color: #339396;
+}
+.page.shop .repair-page .column .information {
+  float: left;
+  width: 18.22222222em;
+  height: 2.44444444em;
+  line-height: 2.44444444em;
+  background-image: url("../img/4S_line.png");
+  font-size: 1.125em;
+  color: #86edf0;
+  text-indent: 20px;
+}
+.page.shop .repair-page .column .information .phone-icon {
+  position: relative;
+  bottom: 0em;
+  right: 0em;
+  width: 4.4375em;
+  height: 2.75em;
+  background-image: url("../img/4S_phone_nml.png");
+}
+.page.shop .repair-page .column .phone-icon {
+  position: relative;
+  right: 0em;
+  width: 4.4375em;
+  height: 3em;
+  background-image: url("../img/4S_phone_nml.png");
+}
+.page.shop .repair-page .map {
+  position: absolute;
+  bottom: 0em;
+  right: 0em;
+  width: 12.8125em;
+  height: 12.8125em;
+  background-image: url("../img/4S_map.png");
+}
+.page.shop .repair-page .map .go-btn {
+  position: relative;
+  left: 5.125em;
+  top: 10em;
+  width: 7.5em;
+  height: 2.8125em;
+  background-image: url("../img/4S_go_exe.png");
+}
+.page.information {
+  background-image: url("../img/4S_bg.png");
+}
+.page.information .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12.40625em;
+  margin-left: -17.03125em;
+  width: 34.0625em;
+  height: 24.8125em;
+  overflow: visible;
+}
+.page.information .content .head {
+  height: 6.75em;
+  width: 34.0625em;
+  float: right;
+}
+.page.information .content .head .tag {
+  float: left;
+  width: 6.75em;
+  height: 6.75em;
+  margin-right: 1px;
+}
+.page.information .content .head .box {
+  position: absolute;
+  left: 13.625em;
+  top: -0.0625em;
+  width: 6.75em;
+  height: 6.75em;
+  background-image: url("../img/circle_03.png");
+}
+.page.information .content .foot {
+  bottom: 0em;
+  height: 16.25em;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.1875em;
+  width: 30.375em;
+}
+.page.information .content .foot .item {
+  float: left;
+  width: 30.375em;
+  height: 3.375em;
+  margin-top: 0.625em;
+}
+.page.information .content .foot .item .text {
+  float: left;
+  width: 6em;
+  height: 2.2em;
+  font-size: 1.25em;
+  line-height: 2.2em;
+  color: #339396;
+}
+.page.information .content .foot .item .semicolon {
+  float: left;
+  width: 1.9em;
+  height: 2.2em;
+  font-size: 1.25em;
+  line-height: 2.2em;
+  color: #339396;
+  text-align: center;
+}
+.page.information .content .foot .item .textbox {
+  float: right;
+  width: 18.22222222em;
+  height: 2.44444444em;
+  font-size: 1.125em;
+  text-indent: 20px;
+  color: #86edf0;
+  background-image: url("../img/MAS_line.png");
+  line-height: 2.75em;
+}
+.page.active {
+  display: block;
+}
+.engine {
+  background-image: url("../img/RM_03.png");
+}
+.engine.no-present {
+  background-image: url("../img/rm_red_03.png");
+}
+.engine.now {
+  bottom: 1px;
+}
+.fuel {
+  background-image: url("../img/RM_05.png");
+}
+.fuel.no-present {
+  background-image: url("../img/rm_red_05.png");
+}
+.cartridge {
+  background-image: url("../img/RM_07.png");
+}
+.cartridge.no-present {
+  background-image: url("../img/rm_red_07.png");
+}
+.cartridge.now {
+  border: 1px;
+  border-color: #07b2b7;
+}
+.tyre {
+  background-image: url("../img/RM_09.png");
+}
+.tyre.no-present {
+  background-image: url("../img/rm_red_09.png");
+}
+.cell {
+  background-image: url("../img/RM_11.png");
+}
+.cell.no-present {
+  background-image: url("../img/rm_red_11.png");
+}
+.break {
+  background-image: url("../img/RM_18.png");
+}
+.break.no-present {
+  background-image: url("../img/rm_red_18.png");
+}
+.brush {
+  background-image: url("../img/RM_19.png");
+}
+.brush.no-present {
+  background-image: url("../img/rm_red_19.png");
+}
+.refrigerator {
+  background-image: url("../img/RM_20.png");
+}
+.refrigerator.no-present {
+  background-image: url("../img/rm_red_20.png");
+}
+.brake-oil {
+  background-image: url("../img/RM_21.png");
+}
+.brake-oil.no-present {
+  background-image: url("../img/rm_red_21.png");
+}
+.transmission-oil {
+  background-image: url("../img/RM_22.png");
+}
+.transmission-oil.no-present {
+  background-image: url("../img/rm_red_22.png");
+}
+.service {
+  background-image: url("../img/RM_28.png");
+}
+.service.no-present {
+  background-image: url("../img/rm_red_28.png");
+}
+.filtration {
+  background-image: url("../img/RM_29.png");
+}
+.filtration.no-present {
+  background-image: url("../img/rm_red_29.png");
+}
+.check {
+  background-image: url("../img/select_14.png");
+}
+.back {
+  position: absolute;
+  left: 1.125em;
+  top: 1.125em;
+  width: 2.5em;
+  height: 1.8125em;
+  background-image: url("../img/4S_left.png");
+}
+.back a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+#my-icon {
+  background-image: url("../img/4S_home.png");
+}
+#saler-icon {
+  background-image: url("../img/4S_saler.png");
+}
+#phone-icon {
+  background-image: url("../img/4S_phone.png");
+}
+#address-icon {
+  background-image: url("../img/4S_location.png");
+}
+.information-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../img/4S_bg.png");
+}
+.information-page .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12.40625em;
+  margin-left: -17.03125em;
+  width: 34.0625em;
+  height: 24.8125em;
+  overflow: visible;
+}
+.information-page .content .head {
+  height: 6.75em;
+  width: 34.0625em;
+  float: right;
+}
+.information-page .content .head .tag {
+  float: left;
+  width: 6.75em;
+  height: 6.75em;
+  margin-right: 1px;
+}
+.information-page .content .head .box {
+  position: absolute;
+  left: 13.625em;
+  top: -0.0625em;
+  width: 6.75em;
+  height: 6.75em;
+  background-image: url("../img/circle_03.png");
+}
+.information-page .content .foot {
+  bottom: 0em;
+  height: 16.25em;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.1875em;
+  width: 30.375em;
+}
+.information-page .content .foot .item {
+  float: left;
+  width: 30.375em;
+  height: 3.375em;
+  margin-top: 0.625em;
+}
+.information-page .content .foot .item .text {
+  float: left;
+  width: 6em;
+  height: 2.2em;
+  font-size: 1.25em;
+  line-height: 2.2em;
+  color: #339396;
+}
+.information-page .content .foot .item .semicolon {
+  float: left;
+  width: 1.9em;
+  height: 2.2em;
+  font-size: 1.25em;
+  line-height: 2.2em;
+  color: #339396;
+  text-align: center;
+}
+.information-page .content .foot .item .textbox {
+  float: right;
+  width: 18.22222222em;
+  height: 2.44444444em;
+  font-size: 1.125em;
+  text-indent: 20px;
+  color: #86edf0;
+  background-image: url("../img/MAS_line.png");
+  line-height: 2.75em;
+}

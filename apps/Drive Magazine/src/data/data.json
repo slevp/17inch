@@ -1,0 +1,119 @@
+{
+    "Data": [
+        {
+            "id": "1",
+            "name": "智驾杂志",
+            "type": "",
+            "cover": "magazine/autor/1111.jpg",
+            "img": [
+                {
+                    "src": "magazine/autor/AutoR4.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR6.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR8.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR10.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR22.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR23.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR24.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR25.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR27.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR28.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR34.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR36.jpg"
+                },
+                {
+                    "src": "magazine/autor/AutoR37.jpg"
+                }
+            ] ,
+            "time": "1413363707"
+        },
+        {
+            "id": "2",
+            "name": "汽车杂志",
+            "type": "",
+            "cover": "magazine/qichezazhi/qichezazhi_01.png",
+            "img": [
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_06.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_07.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_08.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_09.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_10.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_11.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_12.png"
+                },
+                {
+                    "src": "magazine/qichezazhi/qichezazhi_13.png"
+                }
+            ] ,
+            "time": "1413363707"
+
+        },
+        {
+            "id": "3",
+            "name": "智驾杂志",
+            "type": "",
+            "cover": "magazine/autor/3333.jpg",
+            "img": [],
+            "time": "1413363707"
+        },
+        {
+            "id": "4",
+            "name": "智驾杂志",
+            "type": "",
+            "cover": "magazine/autor/4444.jpg",
+            "img": [],
+            "time": "1413363707"
+        },
+        {
+            "id": "5",
+            "name": "智驾杂志",
+            "type": "",
+            "cover": "magazine/autor/5555.jpg",
+            "img": [],
+            "time": "1413363707"
+        },
+        {
+            "id": "6",
+            "name": "智驾杂志",
+            "type": "",
+            "cover": "magazine/autor/6666.jpg",
+            "img": [],
+            "time": "1413363707"
+        }
+    ]
+}
+

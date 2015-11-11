@@ -1,0 +1,300 @@
+@charset "utf-8";
+@import "../../../css/basic";
+@import "../../../css/topivi";
+@import "variables";
+
+.page {
+  .fill-parent;
+  background-image: url('@{img-base}/bg.png');
+  .nav {
+    .t-center(25 * 7 + 32 * 6);
+    .width(57);
+    margin-left: percentage(30/768);
+    .item {
+      width: 100%;
+      .height(25, 14);
+      .margin-bottom(32, 14);
+      .font-size(14);
+      .line-height(25, 14);
+      text-align: center;
+      color: @color-app-store-nav-item;
+      background-image: url('@{img-base}/line_normal.png');
+      background-size: 100% 3px;
+      background-position: bottom;
+      &.active,
+      &:active {
+        color: @color-app-store-nav-item-active;
+        background-image: url('@{img-base}/line_selected.png');
+      }
+      &:last-child {
+        .margin-bottom(0);
+      }
+    }
+  }
+  .main {
+    position: absolute;
+    .top(46);
+    left: percentage(117 / 768);
+    .bottom(0);
+    right: percentage(30 / 768);
+    .content {
+      .fill-parent;
+      .bottom(71);
+      overflow: visible;
+      .listview {
+        .item {
+          float: left;
+          width: percentage(1 / 3);
+          .height(131 + 2);
+          .margin-bottom(17);
+          .link {
+            display: block;
+            .height(131);
+            .margin-right(17);
+            border: 1px @color-app-store-app-border solid;
+            border-radius: 1px;
+            color: @color-app-store-app-info;
+            &:nth-child(3n) {
+              .margin-right(0);
+            }
+            .left {
+              float: left;
+              margin-left: percentage(12 / 196);
+              .thumbnail {
+                .width(65);
+                .height(65);
+                .margin-top(15);
+              }
+              .stars {
+                .margin-top(17);
+                .margin-left(2);
+              }
+            }
+            .right {
+              float: left;
+              .margin-top(21);
+              margin-left: percentage(13 / 196);
+              .name {
+                .font-size(14);
+                .max-width(85, 14);
+                .overflow-ellipsis;
+              }
+              .version-number,
+              .size {
+                .font-size(10);
+              }
+              .size {
+                .margin-bottom(17, 10);
+              }
+              .install {
+                .width(81);
+                .height(27);
+                text-align: center;
+                .line-height(27);
+                background-image: url('@{img-base}/button.png');
+                &:active {
+                  background-image: url('@{img-base}/button_pressed.png');
+                }
+                &.disabled {
+                  text-decoration: line-through;
+                  color: @color-app-store-disabled-color;
+                }
+              }
+            }
+            .download-progress {
+              position: relative;
+              top: 100%;
+              width: 100%;
+              .height(3);
+              .margin-top(-3);
+            }
+          }
+          .uninstall {
+            position: absolute;
+            .width(36);
+            .height(36);
+          }
+        }
+        .info {
+          .t-center(60, -50, 30);
+          width: 100%;
+          text-align: center;
+          color: @color-app-store-app-info;
+          .font-size(30);
+        }
+      }
+    }
+  }
+  #bottom-mask {
+    .flow-bottom(88);
+    background-image: url('@{img-base}/shadow.png');
+  }
+  #app-detail-dialog {
+    .all-center(429, 386);
+    border-radius: 2px;
+    .content {
+      .fill-parent;
+      color: @color-app-store-detail-content;
+      .part {
+        box-shadow: inset 0 -1px 1px @color-app-store-detail-part-border-shadow;
+        &:last-child {
+          box-shadow: none;
+          .margin-bottom(13);
+        }
+      }
+      .basic-info {
+        .height(13 + 116 + 10);
+        .left, .right {
+          float: left;
+        }
+        .left {
+          .thumbnail {
+            .width(116);
+            .height(116);
+            .margin-top(13);
+            .margin-left(5);
+          }
+        }
+        .right {
+          .margin-left(11);
+          .name {
+            .margin-top(22, 20);
+            .font-size(20);
+          }
+          .developer {
+            .margin-top(7, 12);
+            .font-size(12);
+          }
+          .stars {
+            .margin-top(7);
+            .margin-bottom(12);
+          }
+          .install {
+            .width(81);
+            .height(27);
+            text-align: center;
+            .line-height(27);
+            border: 1px solid @color-app-store-detail-content;
+            border-radius: 3px;
+            background-image: none;
+            &.disabled {
+              text-decoration: line-through;
+              color: @color-app-store-disabled-color;
+            }
+            &:active {
+              background-color: @color-app-store-detail-btn-press;
+            }
+          }
+        }
+      }
+      .previews {
+        .wrapper {
+          .margin(15, 14, 16, 14);
+          .height(113);
+          ul {
+            .height(113);
+            li {
+              float: left;
+              .width(194);
+              .height(113);
+              .margin-right(13);
+              display: block;
+              .preview {
+                width: 100%;
+                height: 100%;
+              }
+              &:last-child {
+                .margin-right(0);
+              }
+            }
+          }
+        }
+        .info {
+          .padding(15, 14, 16, 14);
+        }
+      }
+      .description,
+      .new-feature {
+        .padding(7, 14);
+        .title {
+          .font-size(14);
+          color: @color-app-store-detail-part-title;
+        }
+        .text {
+          .font-size(12);
+        }
+      }
+    }
+  }
+
+  .stars {
+    .width(60);
+    .height(12);
+    .star {
+      float: left;
+      .width(12);
+      .height(12);
+      background-image: url('@{img-base}/satr_dark_icon.png');
+      &.active {
+        background-image: url('@{img-base}/satr_light_icon.png');
+      }
+    }
+  }
+  .btns {
+    .height(29);
+    display: none;
+    .small-btn {
+      float: left;
+      .width(29);
+      .height(29);
+      &.pause {
+        background-image: url('@{img-base}/pause_button.png');
+        &:active {
+          background-image: url('@{img-base}/button_pause_pressed.png');
+        }
+        &.paused {
+          background-image: url('@{img-base}/begin_button.png');
+          &:active {
+            background-image: url('@{img-base}/button_begin_pressed.png');
+          }
+        }
+      }
+      &.stop {
+        .margin-left(7);
+        background-image: url('@{img-base}/delete_button.png');
+        &:active {
+          background-image: url('@{img-base}/button_delete_pressed.png');
+        }
+      }
+    }
+    .download-progress {
+      float: left;
+      .width(80);
+      .height(4);
+      .margin-top(11);
+      .margin-right(16);
+    }
+    .continue {
+      display: none;
+    }
+  }
+  .download-progress {
+    display: none;
+    background-color: @color-app-store-download-progress-bg;
+    .bar {
+      background-color: @color-app-store-download-progress-bar;
+    }
+    .dot {
+      display: none;
+    }
+  }
+  .loading {
+    .width(28);
+    .height(27);
+    display: none;
+    background-image: url('@{img-base}/loading_icon.png');
+  }
+}
+.confirm.app-store {
+  .all-center(615, 240);
+}

@@ -1,0 +1,358 @@
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+/* colors */
+/* widths */
+/* methods */
+/* start widgets */
+.topivi-widget {
+  z-index: 100;
+  /* start progress */
+  /* end progress */
+  /* start dialog */
+  /* end dialog */
+  /* start tips */
+  /* end tips */
+  /* start loading */
+  /* end loading */
+}
+.topivi-widget.progress.round {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  background-color: #07b2b8;
+  border-radius: 50%;
+}
+.topivi-widget.progress.round .bg-left,
+.topivi-widget.progress.round .bg-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.topivi-widget.progress.round .bg-left .left,
+.topivi-widget.progress.round .bg-right .left,
+.topivi-widget.progress.round .bg-left .right,
+.topivi-widget.progress.round .bg-right .right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #c8f0f0;
+}
+.topivi-widget.progress.round .bg-right,
+.topivi-widget.progress.round .right {
+  clip: rect(auto, auto, auto, 5em);
+}
+.topivi-widget.progress.round .bg-left,
+.topivi-widget.progress.round .left {
+  clip: rect(auto, 5em, auto, auto);
+}
+.topivi-widget.progress.round .mask {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background-color: #ffffff;
+}
+.topivi-widget.progress.round .point {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 50%;
+  margin-left: -2px;
+  -webkit-transform-origin: 50% 100%;
+}
+.topivi-widget.progress.round .point .dot {
+  position: absolute;
+  top: -0.14375em;
+  left: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  margin-left: -0.25em;
+  background-color: #38d1bf;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5em #055350;
+  -webkit-animation: scaling 2s infinite linear;
+}
+.topivi-widget.progress.line .bar {
+  width: 100%;
+  height: 100%;
+}
+.topivi-widget.progress.line .dot {
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 50%;
+}
+.topivi-widget.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -11.0625em;
+  margin-left: -19.21875em;
+  width: 38.4375em;
+  height: 22.125em;
+  border: 1px solid #57cbe9;
+  border-radius: 0.5em;
+  background-color: rgba(3, 108, 120, 0.92);
+  display: none;
+}
+.topivi-widget.dialog.opened,
+.topivi-widget.dialog.opening {
+  display: block;
+}
+.topivi-widget.dialog .content {
+  color: #c8f4ff;
+}
+.topivi-widget.dialog.confirm {
+  color: #c8f4ff;
+}
+.topivi-widget.dialog.confirm .content {
+  width: 16.1em;
+  height: 5.13333333em;
+  margin: 1.66666667em 2.2em;
+  font-size: 1.875em;
+  overflow: hidden;
+}
+.topivi-widget.dialog.confirm .content .wrapper {
+  width: 100%;
+  height: auto;
+}
+.topivi-widget.dialog.confirm .btns {
+  bottom: 1.52em;
+  height: 2.48em;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.66em;
+  width: 19.32em;
+  font-size: 1.5625em;
+  line-height: 2.48em;
+  text-align: center;
+}
+.topivi-widget.dialog.confirm .btns .ok {
+  border: 1px solid #57cbe9;
+  border-radius: 0.32em;
+  position: absolute;
+  left: 0em;
+  width: 9em;
+  height: 100%;
+  height: 2.4em;
+}
+.topivi-widget.dialog.confirm .btns .cancel {
+  border: 1px solid #57cbe9;
+  border-radius: 0.32em;
+  position: absolute;
+  right: 0em;
+  width: 9em;
+  height: 100%;
+  height: 2.4em;
+}
+.topivi-widget.dialog.confirm .btns .ok:active,
+.topivi-widget.dialog.confirm .btns .cancel:active {
+  background-color: rgba(24, 133, 145, 0.92);
+}
+.topivi-widget.tips {
+  position: absolute;
+  width: 8.875em;
+  height: 5.1875em;
+}
+.topivi-widget.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.topivi-widget.loading .notice {
+  width: 6.25em;
+  height: 4.375em;
+}
+.topivi-widget.loading .notice.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.1875em;
+  margin-left: -3.125em;
+  width: 6.25em;
+  height: 4.375em;
+}
+.topivi-widget.loading .notice.top {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.125em;
+  width: 6.25em;
+  top: 0;
+}
+.topivi-widget.loading .notice.bottom {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.125em;
+  width: 6.25em;
+  bottom: 0;
+}
+.topivi-widget.loading .notice.left {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.1875em;
+  height: 4.375em;
+  left: 0;
+}
+.topivi-widget.loading .notice.right {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.1875em;
+  height: 4.375em;
+  right: 0;
+}
+.topivi-widget.loading .notice .icon {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 auto;
+}
+.topivi-widget.loading .notice .text {
+  font-size: 0.875em;
+  text-align: center;
+  color: #07b2b8;
+}
+/* end widgets */
+.dialog-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  z-index: 90;
+}

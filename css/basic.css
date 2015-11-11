@@ -1,0 +1,135 @@
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}

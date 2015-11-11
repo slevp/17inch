@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5;
+    /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5;
+    /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 0;
+    /*结尾状态 透明度为1*/
+  }
+}
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.page.home {
+  background-color: black;
+}
+.page.home .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12.8125em;
+  margin-left: -20.03125em;
+  width: 40.0625em;
+  height: 25.625em;
+  overflow: visible;
+}
+.page.home .main ul {
+  width: 100%;
+  height: 100%;
+}
+.page.home .main ul .column {
+  width: 40.0625em;
+  height: 8.4375em;
+  background-size: 40.0625em 2.5625em;
+  background-image: url("../img/shelf.png");
+  background-position: 0em 5.875em;
+}
+.page.home .main ul .column .books {
+  position: absolute;
+  margin-top: 1.25em;
+  margin-left: 5.75em;
+  width: 35em;
+  height: 5.875em;
+  z-index: 1;
+}
+.page.home .main ul .column .books .item {
+  float: left;
+  margin-right: 3.875em;
+  width: 4.375em;
+  height: 5.875em;
+}
+.page.home .main ul .column .books .item.no-data img {
+  opacity: 0.4;
+}
+.page.home .main ul .column .books .item.no-data .label {
+  display: block;
+}
+.page.home .main ul .column .books .item img {
+  width: 4.375em;
+  height: 5.875em;
+}
+.page.home .main ul .column .books .item .label {
+  display: none;
+  position: relative;
+  top: -2.14285714em;
+  font-size: 0.875em;
+  color: #729e9e;
+  text-align: center;
+  font-weight: bold;
+}
+.page.home .main .shop-btn {
+  position: absolute;
+  width: 3.125em;
+  height: 1.5625em;
+  right: 0em;
+  top: 0.625em;
+  border: 1px solid #2fd4d9;
+  z-index: 1;
+}
+.page.home .main .shop-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #2fd4d9;
+}
+.page.read {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.page.read .head {
+  position: absolute;
+  top: 0em;
+  height: 3.25em;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #056672;
+}
+.page.read .head .title {
+  line-height: 2.88888889em;
+  text-align: center;
+  color: #c8f4ff;
+  font-size: 1.125em;
+}
+.page.read .head .back-btn {
+  position: absolute;
+  left: 1.61111111em;
+  top: 1.11111111em;
+  width: 0.6875em;
+  height: 1.0625em;
+  background-image: url("../img/button_back_down.png");
+}
+.page.read .head .back-btn.active {
+  background-image: url("../img/button_back_normal.png");
+}
+.page.read .head .back-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.page.read .head .bookrack {
+  position: absolute;
+  top: 0em;
+  left: 2.55555556em;
+  line-height: 2.88888889em;
+  font-size: 1.125em;
+}
+.page.read .head .bookrack a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #3ad9df;
+}
+.page.read .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.28);
+}
+.page.read .content .imgs {
+  height: 100%;
+}
+.page.read .content .imgs li {
+  float: left;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.page.read .content .imgs li img {
+  max-height: 100%;
+}
+.page.read .content .progress {
+  position: absolute;
+  width: 1.3125em;
+  height: 20em;
+  right: 1.25em;
+  top: 3.75em;
+  overflow: visible;
+}
+.page.read .content .progress .progress-line {
+  position: absolute;
+  width: 0.125em;
+  height: 19em;
+  right: 1.25em;
+  top: 0.4375em;
+  bottom: 0.4375em;
+  background-color: #6a9191;
+}
+.page.read .content .progress .circle {
+  position: absolute;
+  width: 1.3125em;
+  height: 1.3125em;
+  right: 0.625em;
+  margin-left: 0em;
+  margin-top: -0.0625em;
+  margin-bottom: -0.0625em;
+  background-image: url("../img/icon_pull.png");
+}
+.page.active {
+  display: block;
+}

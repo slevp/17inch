@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.Tab_Button{
+    float: left;
+    width:283px;
+    height:588px;
+}
+
+#Video {
+	margin-left:53px;
+	background-image:url(../img/DLN/SW/nml/DLN_002_SW_Video_nml.png);
+}
+#Video:active {
+	background-image:url(../img/DLN/SW/sel/DLN_002_SW_Vidoe_sel.png);
+}
+
+#Music {
+	background-image:url(../img/DLN/SW/nml/DLN_002_SW_Music_nml.png);
+}
+#Music:active {
+	background-image:url(../img/DLN/SW/sel/DLN_002_SW_Music_sel.png);
+}
+
+#Picture {
+	background-image:url(../img/DLN/SW/nml/DLN_002_SW_Picture_nml.png);
+}
+#Picture:active {
+	background-image:url(../img/DLN/SW/sel/DLN_002_SW_Picture_sel.png);
+}
+

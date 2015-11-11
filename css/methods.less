@@ -1,0 +1,218 @@
+@font-size: 16;
+
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* position */
+.fill-parent(@width: 100%) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: @width;
+}
+.flow-top (@height: auto, @top: 0, @basic: @font-size) {
+  position: absolute;
+  .top(@top, @basic);
+  .height(@height, @basic);
+  width: 100%;
+}
+.flow-bottom (@height: auto, @bottom: 0, @basic: @font-size) {
+  position: absolute;
+  .bottom(@bottom, @basic);
+  .height(@height, @basic);
+  width: 100%;
+}
+.flow-left (@width: auto, @left: 0, @basic: @font-size) {
+  position: absolute;
+  .left(@left, @basic);
+  .width(@width, @basic);
+  height: 100%;
+}
+.flow-right (@width: auto, @right: 0, @basic: @font-size) {
+  position: absolute;
+  .right(@right, @basic);
+  .width(@width, @basic);
+  height: 100%;
+}
+.l-center (@width, @offset: 0, @basic: @font-size) {
+  position: absolute;
+  left: 50%;
+  .margin-left(-(@width / 2 - @offset), @basic);
+  .width(@width, @basic);
+}
+.r-center (@width, @offset: 0, @basic: @font-size) {
+  position: absolute;
+  right: 50%;
+  .margin-right(-(@width / 2 - @offset), @basic);
+  .width(@width, @basic);
+}
+.t-center (@height, @offset: 0, @basic: @font-size) {
+  position: absolute;
+  top: 50%;
+  .margin-top(-(@height / 2 - @offset), @basic);
+  .height(@height, @basic);
+}
+.b-center (@height, @offset: 0, @basic: @font-size) {
+  position: absolute;
+  bottom: 50%;
+  .margin-bottom(-(@height / 2 - @offset), @basic);
+  .height(@height, @basic);
+}
+.all-center (@width, @height, @h_offset: 0, @v_offset: 0, @basic: @font-size) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .margin-top(-(@height / 2 - @v_offset), @basic);
+  .margin-left(-(@width / 2 - @h_offset), @basic);
+  .width(@width, @basic);
+  .height(@height, @basic);
+}
+/* box model */
+.width (@px, @basic: @font-size) {
+  width: (@px / @basic) * 1em;
+}
+.height (@px, @basic: @font-size) {
+  height: (@px / @basic) * 1em;
+}
+.max-width (@px, @basic: @font-size) {
+  max-width: (@px / @basic) * 1em;
+}
+.max-height (@px, @basic: @font-size) {
+  max-height: (@px / @basic) * 1em;
+}
+.min-width (@px, @basic: @font-size) {
+  min-width: (@px / @basic) * 1em;
+}
+.min-height (@px, @basic: @font-size) {
+  min-height: (@px / @basic) * 1em;
+}
+.top (@px, @basic: @font-size) {
+  top: (@px / @basic) * 1em;
+}
+.bottom (@px, @basic: @font-size) {
+  bottom: (@px / @basic) * 1em;
+}
+.left (@px, @basic: @font-size) {
+  left: (@px / @basic) * 1em;
+}
+.right (@px, @basic: @font-size) {
+  right: (@px / @basic) * 1em;
+}
+.margin (@top_and_bottom, @left_and_right, @basic: @font-size) {
+  margin: (@top_and_bottom / @basic) * 1em (@left_and_right / @basic) * 1em;
+}
+.margin (@top, @right, @bottom, @left, @basic: @font-size) {
+  margin: (@top / @basic) * 1em (@right / @basic) * 1em (@bottom / @basic) * 1em (@left / @basic) * 1em;
+}
+.margin-top (@px, @basic: @font-size) {
+  margin-top: (@px / @basic) * 1em;
+}
+.margin-bottom (@px, @basic: @font-size) {
+  margin-bottom: (@px / @basic) * 1em;
+}
+.margin-left (@px, @basic: @font-size) {
+  margin-left: (@px / @basic) * 1em;
+}
+.margin-right (@px, @basic: @font-size) {
+  margin-right: (@px / @basic) * 1em;
+}
+.padding (@top_and_bottom, @left_and_right, @basic: @font-size) {
+  padding: (@top_and_bottom / @basic) * 1em (@left_and_right / @basic) * 1em;
+}
+.padding (@top, @right, @bottom, @left, @basic: @font-size) {
+  padding: (@top / @basic) * 1em (@right / @basic) * 1em (@bottom / @basic) * 1em (@left / @basic) * 1em;
+}
+.padding-top (@px, @basic: @font-size) {
+  padding-top: (@px / @basic) * 1em;
+}
+.padding-bottom (@px, @basic: @font-size) {
+  padding-bottom: (@px / @basic) * 1em;
+}
+.padding-left (@px, @basic: @font-size) {
+  padding-left: (@px / @basic) * 1em;
+}
+.padding-right (@px, @basic: @font-size) {
+  padding-right: (@px / @basic) * 1em;
+}
+.border (@color, @px: 1, @style: solid, @basic: @font-size) {
+  .border-width(@px, @basic);
+  border-style: @style;
+  border-color: @color;
+}
+.border-top (@color, @px: 1, @style: solid, @basic: @font-size) {
+  .border-top-width(@px, @basic);
+  border-top-style: @style;
+  border-top-color: @color;
+}
+.border-bottom (@color, @px: 1, @style: solid, @basic: @font-size) {
+  .border-bottom-width(@px, @basic);
+  border-bottom-style: @style;
+  border-bottom-color: @color;
+}
+.border-left (@color, @px: 1, @style: solid, @basic: @font-size) {
+  .border-left-width(@px, @basic);
+  border-left-style: @style;
+  border-left-color: @color;
+}
+.border-right (@color, @px: 1, @style: solid, @basic: @font-size) {
+  .border-right-width(@px, @basic);
+  border-right-style: @style;
+  border-right-color: @color;
+}
+.border-width (@px, @basic: @font-size) {
+  border-width: (@px / @basic) * 1em;
+}
+.border-top-width (@px, @basic: @font-size) {
+  border-top-width: (@px / @basic) * 1em;
+}
+.border-bottom-width (@px, @basic: @font-size) {
+  border-bottom-width: (@px / @basic) * 1em;
+}
+.border-left-width (@px, @basic: @font-size) {
+  border-left-width: (@px / @basic) * 1em;
+}
+.border-right-width (@px, @basic: @font-size) {
+  border-right-width: (@px / @basic) * 1em;
+}
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.box-shadow (@x, @y, @blur, @color) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+.inset-box-shadow (@x, @y, @blur, @color) {
+  box-shadow: inset @x @y @blur @color;
+  -moz-box-shadow: inset @x @y @blur @color;
+  -webkit-box-shadow: inset @x @y @blur @color;
+}
+/* text */
+.font-size (@px, @basic: @font-size) {
+  font-size: (@px / @basic) * 1em;
+}
+.line-height (@px, @basic: @font-size) {
+  line-height: (@px / @basic) * 1em;
+}
+.text-shadow (@x, @y, @blur, @color) {
+  text-shadow: @arguments;
+  -moz-text-shadow: @arguments;
+  -webkit-text-shadow: @arguments;
+}
+/* background */
+.background-size (@width, @height, @basic: @font-size) {
+  background-size: (@width / @basic) * 1em (@height / @basic) * 1em;
+}
+.background-position (@x, @y, @basic: @font-size) {
+  background-position: (@x / @basic) * 1em (@y / @basic) * 1em;
+}
+.background-position-x (@px, @basic: @font-size) {
+  background-position-x: (@px / @basic) * 1em;
+}
+.background-position-y (@px, @basic: @font-size) {
+  background-position-y: (@px / @basic) * 1em;
+}

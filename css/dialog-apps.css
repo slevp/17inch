@@ -1,0 +1,502 @@
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+.dialog-apps {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.dialog-apps.wheel-press {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/dialog-apps/wheel-press/bg.gif');
+}
+.dialog-apps.wheel-press .tip {
+  height: 4.0625em;
+}
+.dialog-apps.wheel-press .tip.left {
+  position: absolute;
+  left: 50%;
+  margin-left: -4.71875em;
+  width: 9.4375em;
+}
+.dialog-apps.wheel-press .tip.left .data {
+  text-align: left;
+}
+.dialog-apps.wheel-press .tip.right {
+  position: absolute;
+  right: 50%;
+  margin-right: -4.71875em;
+  width: 9.4375em;
+}
+.dialog-apps.wheel-press .tip.right .data {
+  text-align: right;
+}
+.dialog-apps.wheel-press .tip.front {
+  top: 1.5625em;
+}
+.dialog-apps.wheel-press .tip.back {
+  top: 16.5625em;
+  height: 2.5em;
+}
+.dialog-apps.wheel-press .tip .value {
+  font-size: 2.75em;
+  line-height: 0.90909091em;
+  color: #1dbabe;
+}
+.dialog-apps.wheel-press .tip .unit {
+  position: relative;
+  top: -0.8125em;
+  left: 0.125em;
+  font-size: 1.25em;
+  color: #1dbabe;
+}
+.dialog-apps.wheel-press .tip .line {
+  position: absolute;
+  bottom: 0em;
+  height: 1.5625em;
+  width: 100%;
+}
+.dialog-apps.wheel-press .tip.front.left {
+  margin-left: -15.9375em;
+}
+.dialog-apps.wheel-press .tip.front.left .line {
+  background-image: url('../img/dialog-apps/wheel-press/lv_03.png');
+}
+.dialog-apps.wheel-press .tip.front.left.active .line,
+.dialog-apps.wheel-press .tip.front.left:active .line {
+  background-image: url('../img/dialog-apps/wheel-press/hong_03.png');
+}
+.dialog-apps.wheel-press .tip.front.right {
+  margin-right: -15em;
+}
+.dialog-apps.wheel-press .tip.front.right .line {
+  background-image: url('../img/dialog-apps/wheel-press/lv_05.png');
+}
+.dialog-apps.wheel-press .tip.front.right.active .line,
+.dialog-apps.wheel-press .tip.front.right:active .line {
+  background-image: url('../img/dialog-apps/wheel-press/hong_05.png');
+}
+.dialog-apps.wheel-press .tip.back.left {
+  margin-left: -17.5em;
+}
+.dialog-apps.wheel-press .tip.back.left .line {
+  background-image: url('../img/dialog-apps/wheel-press/lv_10.png');
+}
+.dialog-apps.wheel-press .tip.back.left.active .line,
+.dialog-apps.wheel-press .tip.back.left:active .line {
+  background-image: url('../img/dialog-apps/wheel-press/hong_10.png');
+}
+.dialog-apps.wheel-press .tip.back.right {
+  margin-right: -16.5625em;
+}
+.dialog-apps.wheel-press .tip.back.right .line {
+  background-image: url('../img/dialog-apps/wheel-press/lv_13.png');
+}
+.dialog-apps.wheel-press .tip.back.right.active .line,
+.dialog-apps.wheel-press .tip.back.right:active .line {
+  background-image: url('../img/dialog-apps/wheel-press/hong_13.png');
+}
+.dialog-apps.wheel-press .tip.active .value,
+.dialog-apps.wheel-press .tip:active .value,
+.dialog-apps.wheel-press .tip.active .unit,
+.dialog-apps.wheel-press .tip:active .unit {
+  color: #e9342b;
+}
+.dialog-apps.weather {
+  width: 55.875em;
+  background-image: url('../img/dialog-apps/weather/BG_03.png');
+}
+.dialog-apps.weather .item {
+  width: 6.875em;
+  height: 100%;
+  float: left;
+  display: block;
+  border-right: 1px solid #41787d;
+  background-image: url('../img/dialog-apps/weather/BG1_1.png');
+}
+.dialog-apps.weather .item .small {
+  color: #41787d;
+  display: block;
+  height: 100%;
+}
+.dialog-apps.weather .item .small .top-info {
+  margin-top: 1.25em;
+}
+.dialog-apps.weather .item .small .top-info .month-date {
+  margin-right: 0.1875em;
+}
+.dialog-apps.weather .item .small .weather-icon {
+  position: relative;
+  top: 9.375em;
+  width: 9.625em;
+  height: 7.25em;
+}
+.dialog-apps.weather .item .big {
+  height: 100%;
+  color: #8be8f2;
+  display: none;
+}
+.dialog-apps.weather .item .big .top-info {
+  margin-top: 0.9375em;
+}
+.dialog-apps.weather .item .big .top-info .left-part {
+  float: left;
+  text-align: left;
+  padding-left: 0.5em;
+}
+.dialog-apps.weather .item .big .top-info .right-part {
+  float: right;
+  text-align: right;
+  padding-top: 0.3125em;
+  padding-right: 1.125em;
+}
+.dialog-apps.weather .item .big .top-info .city-icon {
+  display: inline-block;
+  width: 0.875em;
+  height: 1.1875em;
+  margin-right: 0.3125em;
+  background-image: url('../img/dialog-apps/weather/dingwei.png');
+}
+.dialog-apps.weather .item .big .top-info .city {
+  font-size: 1.375em;
+}
+.dialog-apps.weather .item .big .top-info .date {
+  font-size: 1.125em;
+}
+.dialog-apps.weather .item .big .top-info .day {
+  font-size: 1.0625em;
+}
+.dialog-apps.weather .item .big .status {
+  margin-top: 0.41666667em;
+  padding-right: 0.75em;
+  font-size: 1.5em;
+  text-align: right;
+}
+.dialog-apps.weather .item .big .temperature {
+  padding-right: 1.125em;
+  text-align: right;
+  height: 5em;
+  line-height: 5em;
+}
+.dialog-apps.weather .item .big .temperature .value {
+  font-size: 5.875em;
+  color: #cbebec;
+}
+.dialog-apps.weather .item .big .temperature .unit {
+  position: relative;
+  top: -2em;
+  font-size: 1.625em;
+}
+.dialog-apps.weather .item .big .weather-icon {
+  position: relative;
+  top: -0.625em;
+  width: 9.625em;
+  height: 8.9375em;
+  margin-left: 0.625em;
+}
+.dialog-apps.weather .item .big .temperature-interval {
+  position: relative;
+  bottom: 0.55555556em;
+  padding-left: 1em;
+  font-size: 1.125em;
+}
+.dialog-apps.weather .item .big .temperature-interval .temperature-icon {
+  position: relative;
+  top: 0.11111111em;
+  display: inline-block;
+  width: 0.83333333em;
+  height: 1.5em;
+  margin-right: 0.27777778em;
+  background-image: url('../img/dialog-apps/weather/wenduji.png');
+}
+.dialog-apps.weather .item.active {
+  width: 17.8125em;
+  background-image: url('../img/dialog-apps/weather/kuang_mid.png');
+}
+.dialog-apps.weather .item.active .small {
+  display: none;
+}
+.dialog-apps.weather .item.active .big {
+  display: block;
+}
+.dialog-apps.weather .item.left .small {
+  padding-right: 0.75em;
+}
+.dialog-apps.weather .item.left .small .top-info {
+  text-align: right;
+}
+.dialog-apps.weather .item.left .small .weather-icon {
+  left: -3em;
+}
+.dialog-apps.weather .item.right .small {
+  padding-left: 0.75em;
+}
+.dialog-apps.weather .item.right .small .top-info {
+  text-align: left;
+}
+.dialog-apps.weather .item:last-child {
+  border-right: none;
+}
+.dialog-apps.oil {
+  background-image: url('../img/dialog-apps/oil/BG_03.png');
+}
+.dialog-apps.oil * {
+  overflow: visible;
+}
+.dialog-apps.oil .wrapper {
+  padding: 1.25em 2em 0em 2em;
+  color: #1dbabe;
+}
+.dialog-apps.oil .wrapper .header {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #91acaa;
+}
+.dialog-apps.oil .wrapper .header .title {
+  text-align: center;
+  font-size: 2em;
+}
+.dialog-apps.oil .wrapper .header .title .unit {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+.dialog-apps.oil .wrapper .header .date {
+  float: right;
+  font-size: 1.125em;
+  margin-top: -1.125em;
+}
+.dialog-apps.oil .wrapper .main {
+  font-style: italic;
+}
+.dialog-apps.oil .wrapper .main .item {
+  float: left;
+  margin-top: 2.3125em;
+}
+.dialog-apps.oil .wrapper .main .item:nth-child(2n) {
+  float: right;
+}
+.dialog-apps.oil .wrapper .main .item .label {
+  float: left;
+}
+.dialog-apps.oil .wrapper .main .item .label .flag {
+  font-size: 2em;
+  font-weight: bold;
+}
+.dialog-apps.oil .wrapper .main .item .label .flag .jinhao {
+  position: relative;
+  top: -0.75em;
+  left: 0.3125em;
+  font-size: 0.5em;
+}
+.dialog-apps.oil .wrapper .main .item .label .name {
+  font-size: 1.125em;
+  color: #40757b;
+}
+.dialog-apps.oil .wrapper .main .item .value {
+  float: left;
+  width: 7.875em;
+  height: 2.75em;
+  margin-left: 1.125em;
+  padding: 0.5625em 1.5625em;
+  background-image: url('../img/dialog-apps/oil/tu_07.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number {
+  float: left;
+  width: 1.6875em;
+  height: 2.75em;
+  margin-right: 0.1875em;
+}
+.dialog-apps.oil .wrapper .main .item .value .number:last-child {
+  margin-right: 0em;
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='0'] {
+  background-image: url('../img/dialog-apps/oil/0.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='1'] {
+  background-image: url('../img/dialog-apps/oil/1.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='2'] {
+  background-image: url('../img/dialog-apps/oil/2.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='3'] {
+  background-image: url('../img/dialog-apps/oil/3.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='4'] {
+  background-image: url('../img/dialog-apps/oil/4.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='5'] {
+  background-image: url('../img/dialog-apps/oil/5.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='6'] {
+  background-image: url('../img/dialog-apps/oil/6.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='7'] {
+  background-image: url('../img/dialog-apps/oil/7.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='8'] {
+  background-image: url('../img/dialog-apps/oil/8.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .number[data-value='9'] {
+  background-image: url('../img/dialog-apps/oil/9.png');
+}
+.dialog-apps.oil .wrapper .main .item .value .dot {
+  position: relative;
+  top: 2.4375em;
+  float: left;
+  width: 0.375em;
+  height: 0.3125em;
+  margin-right: 0.1875em;
+  background-image: url('../img/dialog-apps/oil/p.png');
+}
+.dialog-apps.oil .wrapper .cb {
+  clear: both;
+}
+.dialog-apps.oil .wrapper .desc {
+  margin-top: 0.78571429em;
+  font-size: 0.875em;
+  font-style: italic;
+  color: #e63232;
+  text-align: right;
+}
+.tips.error-tips {
+  width: 100%;
+  height: 1.25em;
+  padding-top: 0.83333333em;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #8be8f2;
+}

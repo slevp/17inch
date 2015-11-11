@@ -1,0 +1,508 @@
+@charset "utf-8";
+@import "../../../css/basic";
+@import "../../../css/topivi";
+
+.page {
+  .fill-parent;
+  background-image: url('@{img-base}/ACN_bg.png');
+  * {
+    overflow: visible;
+  }
+  .center-area {
+    position: absolute;
+    width: 6.625em;
+    height: 18.0625em;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.3125em;
+    margin-top: -9.03125em;
+  }
+
+  .external-temperature {
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    color: #07b2b8;
+  }
+
+  .external-temperature span {
+    font-size: 1.5em;
+  }
+
+  .center-area .btns .item {
+    width: 100%;
+    height: 3.3125em;
+    margin-bottom: 0.375em;
+  }
+
+  .center-area .btns .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .center-area .defogging {
+    background-image: url('@{img-base}/ACN_icon_normal1.png');
+  }
+
+  .center-area .defogging:active,
+  .center-area .defogging.active {
+    background-image: url('@{img-base}/ACN_icon_down1.png');
+  }
+
+  .center-area .ac {
+    background-image: url('@{img-base}/ACN_icon_normal2.png');
+  }
+
+  .center-area .ac:active,
+  .center-area .ac.active {
+    background-image: url('@{img-base}/ACN_icon_down2.png');
+  }
+
+  .center-area .auto {
+    background-image: url('@{img-base}/ACN_icon_normal3.png');
+  }
+
+  .center-area .auto:active,
+  .center-area .auto.active {
+    background-image: url('@{img-base}/ACN_icon_down3.png');
+  }
+
+  .center-area .air-purifier {
+    background-image: url('@{img-base}/ACN_icon_normal4.png');
+  }
+
+  .center-area .air-purifier:active,
+  .center-area .air-purifier.active {
+    background-image: url('@{img-base}/ACN_icon_down4.png');
+  }
+
+  .center-area .pollen {
+    background-image: url('@{img-base}/ACN_icon_normal5.png');
+  }
+
+  .center-area .pollen:active,
+  .center-area .pollen.active {
+    background-image: url('@{img-base}/ACN_icon_down5.png');
+  }
+
+  .center-area .circle {
+    position: absolute;
+    width: 14.8125em;
+    height: 14.8125em;
+    top: 50%;
+    margin-top: -7.40625em;
+  }
+
+  .center-area .circle.left {
+    left: -14.8125em;
+    background-image: url('@{img-base}/ACN_windmodle_bgleft.png');
+  }
+
+  .center-area .circle.right {
+    left: 6.625em;
+    background-image: url('@{img-base}/ACN_windmodle_bgright.png');
+  }
+
+  .center-area .circle .top {
+    position: absolute;
+    width: 5em;
+    height: 5.3125em;
+    top: 1em;
+  }
+
+  .center-area .circle .middle {
+    position: absolute;
+    width: 5.0625em;
+    height: 5.5625em;
+    top: 50%;
+    margin-top: -2.78125em;
+  }
+
+  .center-area .circle .bottom {
+    position: absolute;
+    width: 5em;
+    height: 5.3125em;
+    bottom: 0.875em;
+  }
+
+  .center-area .circle .top,
+  .center-area .circle .middle,
+  .center-area .circle .bottom {
+    opacity: 0;
+  }
+
+  .center-area .circle .top.active,
+  .center-area .circle .middle.active,
+  .center-area .circle .bottom.active {
+    opacity: 1;
+  }
+
+  .center-area .circle.left .top {
+    left: 1.5em;
+    background-image: url('@{img-base}/ACN_windstyle_lefttop.png');
+  }
+
+  .center-area .circle.left .middle {
+    left: 0.8125em;
+    background-image: url('@{img-base}/ACN_windstyle_leftmiddle.png');
+  }
+
+  .center-area .circle.left .bottom {
+    left: 1.5em;
+    background-image: url('@{img-base}/ACN_windstyle_leftdown.png');
+  }
+
+  .center-area .circle.right .top {
+    right: 1.5em;
+    background-image: url('@{img-base}/ACN_windstyle_righttop.png');
+  }
+
+  .center-area .circle.right .middle {
+    right: 0.8125em;
+    background-image: url('@{img-base}/ACN_windstyle_rightmiddle.png');
+  }
+
+  .center-area .circle.right .bottom {
+    right: 1.5em;
+    background-image: url('@{img-base}/ACN_windstyle_rightdown.png');
+  }
+
+  .center-area .circle.left .label,
+  .center-area .circle.right .label {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    width: 10em;
+    height: 1em;
+    line-height: 1em;
+    font-size: 1.125em;
+    color: #1a8387;
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  .center-area .circle.left .label {
+    left: 50%;
+    margin-left: -4.5em;
+  }
+
+  .center-area .circle.right .label {
+    right: 50%;
+    margin-right: -4.5em;
+  }
+
+  .center-area .circle .label.active {
+    opacity: 1;
+    font-weight: bold;
+  }
+
+  .wind {
+    position: absolute;
+    top: 50%;
+    width: 81px;
+    height: 200px;
+    margin-top: -100px;
+  }
+
+  .wind.left {
+    left: 2em;
+    background-image: url('@{img-base}/ACN_windlevel_bgleft.png');
+  }
+
+  .wind.right {
+    right: 2em;
+    background-image: url('@{img-base}/ACN_windlevel_bgright.png');
+  }
+
+  .wind .fan {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('@{img-base}/ACN_windicon.png');
+
+    -webkit-animation-name: rotation;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-fill-mode: none;
+  }
+
+  .wind.right .fan {
+    right: 0;
+  }
+
+  .wind[data-quantity='1'] .fan {
+    -webkit-animation-duration: 3s;
+  }
+
+  .wind[data-quantity='2'] .fan {
+    -webkit-animation-duration: 2.5s;
+  }
+
+  .wind[data-quantity='3'] .fan {
+    -webkit-animation-duration: 2s;
+  }
+
+  .wind[data-quantity='4'] .fan {
+    -webkit-animation-duration: 1.5s;
+  }
+
+  .wind[data-quantity='5'] .fan {
+    -webkit-animation-duration: 1s;
+  }
+
+  .wind[data-quantity='6'] .fan {
+    -webkit-animation-duration: 700ms;
+  }
+
+  .wind[data-quantity='7'] .fan {
+    -webkit-animation-duration: 400ms;
+  }
+
+  .wind .item {
+    margin-bottom: 1px;
+    opacity: 0;
+  }
+
+  .wind .item.shown {
+    opacity: 1;
+  }
+
+  .wind .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .wind.left .quantity7 {
+    height: 29px;
+    background-image: url('@{img-base}/ACN_windbutton_left1.png');
+  }
+
+  .wind.left .quantity6 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_left2.png');
+  }
+
+  .wind.left .quantity5 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_left3.png');
+  }
+
+  .wind.left .quantity4 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_left4.png');
+  }
+
+  .wind.left .quantity3 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_left5.png');
+  }
+
+  .wind.left .quantity2 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_left6.png');
+  }
+
+  .wind.left .quantity1 {
+    height: 30px;
+    background-image: url('@{img-base}/ACN_windbutton_left7.png');
+  }
+
+  .wind.right .quantity7 {
+    height: 29px;
+    background-image: url('@{img-base}/ACN_windbutton_right1.png');
+  }
+
+  .wind.right .quantity6 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_right2.png');
+  }
+
+  .wind.right .quantity5 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_right3.png');
+  }
+
+  .wind.right .quantity4 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_right4.png');
+  }
+
+  .wind.right .quantity3 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_right5.png');
+  }
+
+  .wind.right .quantity2 {
+    height: 27px;
+    background-image: url('@{img-base}/ACN_windbutton_right6.png');
+  }
+
+  .wind.right .quantity1 {
+    height: 30px;
+    background-image: url('@{img-base}/ACN_windbutton_right7.png');
+  }
+
+  /*left: 0.75em;*/
+  .temperature {
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    bottom: 1.375em;
+  }
+
+  .temperature .wrapper {
+    position: absolute;
+    height: 100%;
+    width: 13.125em;
+    overflow: hidden;
+  }
+
+  .temperature .wrapper.left {
+    left: 25%;
+    margin-left: -6.5625em;
+  }
+
+  .temperature .wrapper.right {
+    right: 25%;
+    margin-right: -6.5625em;
+  }
+
+  .temperature .wrapper .circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    margin-left: -1.5em;
+    background-image: url('@{img-base}/ACN_temprature_off.png');
+  }
+
+  .temperature .wrapper .circle:active {
+    background-image: url('@{img-base}/ACN_temprature_on.png');
+  }
+
+  .temperature .wrapper ul {
+    width: 100%;
+    height: 3em;
+    list-style: none;
+  }
+
+  .temperature .wrapper li {
+    display: block;
+    float: left;
+    list-style: none;
+    width: 20%;
+    height: 100%;
+    line-height: 3.4286em;
+    color: #ffffff;
+    font-size: 0.875em;
+    text-align: center;
+  }
+
+  .temperature .wrapper li.bigger {
+    font-size: 1.125em;
+    line-height: 2.6667em;
+  }
+
+  .temperature .wrapper li.biggest {
+    font-size: 1.25em;
+    line-height: 2.4em;
+  }
+
+  .temperature .label {
+    position: absolute;
+    width: 2em;
+    height: 100%;
+    left: 50%;
+    margin-left: -1em;
+    line-height: 1.7143em;
+    font-size: 1.75em;
+    color: #07b2b8;
+    text-align: center;
+  }
+}
+
+.page[data-mode='footer'] {
+  width: 99%;
+  height: 97%;
+  top: 2%;
+  left: .5%;
+  background-image: url('@{img-base}/ACN_leftscreen_bg.png');
+  .external-temperature {
+    display: none;
+  }
+
+  .center-area {
+    margin-top: -10.03125em;
+  }
+
+  .center-area .circle {
+    -webkit-transform: scale(0.8);
+  }
+
+  .center-area .circle.left {
+    margin-left: 1.5em;
+  }
+
+  .center-area .circle.right {
+    margin-left: -1.5em;
+  }
+
+  .center-area .btns {
+    -webkit-transform: scale(0.7);
+  }
+
+  .wind {
+    -webkit-transform: scale(0.75);
+    margin-top: -7.8em;
+  }
+
+  .wind.left {
+    left: 0;
+  }
+
+  .wind.right {
+    right: 0;
+  }
+
+  .temperature {
+    -webkit-transform: scale(0.75);
+    bottom: -0.5em;
+    .label {
+    }
+  }
+
+  &.expanded {
+    background-image: url('@{img-base}/ACN_thirdscreen_bg.png');
+  }
+
+  &.expanded .center-area .circle.left {
+    margin-left: 0;
+  }
+
+  &.expanded .center-area .circle.right {
+    margin-left: 0;
+  }
+
+  &.expanded .wind.left {
+    left: 7em;
+  }
+
+  &.expanded .wind.right {
+    right: 7em;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 960px) {
+  .page[data-mode='footer'] {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  .page[data-mode='footer']  {
+    font-size: 15px;
+  }
+}

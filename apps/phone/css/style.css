@@ -1,0 +1,779 @@
+/* variables */
+/* colors */
+/* methods */
+.no-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.circle {
+  border-radius: 50%;
+}
+.overflow-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fill-parent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* absolute horizontal center, count from left */
+/* absolute horizontal center, count from right */
+/* absolute vertical center, count from top */
+/* absolute vertical center, count from bottom */
+/* absolute vertical center, count from bottom */
+/* size transfer */
+/* animation */
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bg-moving-right {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 48em;
+  }
+}
+@-webkit-keyframes scaling {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* common styles */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+*.invisible {
+  visibility: hidden;
+}
+*.visible {
+  visibility: visible;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+/* colors */
+/* widths */
+/* methods */
+/* start widgets */
+.topivi-widget {
+  z-index: 100;
+  /* start progress */
+  /* end progress */
+  /* start dialog */
+  /* end dialog */
+  /* start tips */
+  /* end tips */
+  /* start loading */
+  /* end loading */
+}
+.topivi-widget.progress.round {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  background-color: #07b2b8;
+  border-radius: 50%;
+}
+.topivi-widget.progress.round .bg-left,
+.topivi-widget.progress.round .bg-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.topivi-widget.progress.round .bg-left .left,
+.topivi-widget.progress.round .bg-right .left,
+.topivi-widget.progress.round .bg-left .right,
+.topivi-widget.progress.round .bg-right .right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #c8f0f0;
+}
+.topivi-widget.progress.round .bg-right,
+.topivi-widget.progress.round .right {
+  clip: rect(auto, auto, auto, 5em);
+}
+.topivi-widget.progress.round .bg-left,
+.topivi-widget.progress.round .left {
+  clip: rect(auto, 5em, auto, auto);
+}
+.topivi-widget.progress.round .mask {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background-color: #ffffff;
+}
+.topivi-widget.progress.round .point {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 50%;
+  margin-left: -2px;
+  -webkit-transform-origin: 50% 100%;
+}
+.topivi-widget.progress.round .point .dot {
+  position: absolute;
+  top: -0.14375em;
+  left: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  margin-left: -0.25em;
+  background-color: #38d1bf;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5em #055350;
+  -webkit-animation: scaling 2s infinite linear;
+}
+.topivi-widget.progress.line .bar {
+  width: 100%;
+  height: 100%;
+}
+.topivi-widget.progress.line .dot {
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 50%;
+}
+.topivi-widget.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -11.0625em;
+  margin-left: -19.21875em;
+  width: 38.4375em;
+  height: 22.125em;
+  border: 1px solid #57cbe9;
+  border-radius: 0.5em;
+  background-color: rgba(3, 108, 120, 0.92);
+  display: none;
+}
+.topivi-widget.dialog.opened,
+.topivi-widget.dialog.opening {
+  display: block;
+}
+.topivi-widget.dialog .content {
+  color: #c8f4ff;
+}
+.topivi-widget.dialog.confirm {
+  color: #c8f4ff;
+}
+.topivi-widget.dialog.confirm .content {
+  width: 16.1em;
+  height: 5.13333333em;
+  margin: 1.66666667em 2.2em;
+  font-size: 1.875em;
+  overflow: hidden;
+}
+.topivi-widget.dialog.confirm .content .wrapper {
+  width: 100%;
+  height: auto;
+}
+.topivi-widget.dialog.confirm .btns {
+  bottom: 1.52em;
+  height: 2.48em;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -9.66em;
+  width: 19.32em;
+  font-size: 1.5625em;
+  line-height: 2.48em;
+  text-align: center;
+}
+.topivi-widget.dialog.confirm .btns .ok {
+  border: 1px solid #57cbe9;
+  border-radius: 0.32em;
+  position: absolute;
+  left: 0em;
+  width: 9em;
+  height: 100%;
+  height: 2.4em;
+}
+.topivi-widget.dialog.confirm .btns .cancel {
+  border: 1px solid #57cbe9;
+  border-radius: 0.32em;
+  position: absolute;
+  right: 0em;
+  width: 9em;
+  height: 100%;
+  height: 2.4em;
+}
+.topivi-widget.dialog.confirm .btns .ok:active,
+.topivi-widget.dialog.confirm .btns .cancel:active {
+  background-color: rgba(24, 133, 145, 0.92);
+}
+.topivi-widget.tips {
+  position: absolute;
+  width: 8.875em;
+  height: 5.1875em;
+}
+.topivi-widget.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.topivi-widget.loading .notice {
+  width: 6.25em;
+  height: 4.375em;
+}
+.topivi-widget.loading .notice.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.1875em;
+  margin-left: -3.125em;
+  width: 6.25em;
+  height: 4.375em;
+}
+.topivi-widget.loading .notice.top {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.125em;
+  width: 6.25em;
+  top: 0;
+}
+.topivi-widget.loading .notice.bottom {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.125em;
+  width: 6.25em;
+  bottom: 0;
+}
+.topivi-widget.loading .notice.left {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.1875em;
+  height: 4.375em;
+  left: 0;
+}
+.topivi-widget.loading .notice.right {
+  position: absolute;
+  top: 50%;
+  margin-top: -2.1875em;
+  height: 4.375em;
+  right: 0;
+}
+.topivi-widget.loading .notice .icon {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 auto;
+}
+.topivi-widget.loading .notice .text {
+  font-size: 0.875em;
+  text-align: center;
+  color: #07b2b8;
+}
+/* end widgets */
+.dialog-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  z-index: 90;
+}
+.app-phone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../img/phone_bg_middle.png");
+}
+.app-phone .nav-btns {
+  position: absolute;
+  top: 50%;
+  left: 2.5625em;
+  width: 3.75em;
+  height: 18.4375em;
+  margin-top: -9.21875em;
+}
+.app-phone .nav-btns .item {
+  width: 100%;
+  height: 3.75em;
+  margin-bottom: 0.9375em;
+}
+.app-phone .nav-btns .item:last-child {
+  margin-bottom: 0;
+}
+.app-phone .nav-btns .favorites {
+  background-image: url("../img/phone_number_off_favorites.png");
+}
+.app-phone .nav-btns .favorites:active,
+.app-phone .nav-btns .favorites.active {
+  background-image: url("../img/phone_number_on_favorites.png");
+}
+.app-phone .nav-btns .recent-call {
+  background-image: url("../img/phone_number_off_record.png");
+}
+.app-phone .nav-btns .recent-call:active,
+.app-phone .nav-btns .recent-call.active {
+  background-image: url(../img/phone_number_on_record.png);
+}
+.app-phone .nav-btns .phone-book {
+  background-image: url("../img/phone_number_off_friend.png");
+}
+.app-phone .nav-btns .phone-book:active,
+.app-phone .nav-btns .phone-book.active {
+  background-image: url("../img/phone_number_on_friend.png");
+}
+.app-phone .nav-btns .dial {
+  background-image: url("../img/phone_number_off_dailing.png");
+}
+.app-phone .nav-btns .dial:active,
+.app-phone .nav-btns .dial.active {
+  background-image: url("../img/phone_number_on_dailing.png");
+}
+.app-phone .page {
+  display: none;
+}
+.app-phone .page.active {
+  display: block;
+}
+.dial-page .dial-pad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 19.6875em;
+  width: 31.25em;
+  margin-top: -11.84375em;
+  margin-left: -12.21875em;
+}
+.dial-page .dial-pad .dial-top {
+  height: 2.5625em;
+  width: 22.375em;
+  padding-left: 2em;
+  margin-bottom: 1.4375em;
+}
+.dial-page .dial-pad .dial-top .dial-number {
+  float: left;
+  width: 7.8888em;
+  font-size: 2.25em;
+  color: #FFFFFF;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: right;
+}
+.dial-page .dial-pad .dial-top .dial-cursor {
+  float: right;
+  font-size: 2.25em;
+  color: #FFFFFF;
+}
+.dial-page .dial-pad .dial-top .dial-cursor.hide {
+  display: none;
+}
+.dial-page .dial-pad .dial-top .dial-delete {
+  float: right;
+  margin-left: 0.1875em;
+  margin-top: 0.4375em;
+  width: 3.3125em;
+  height: 1.8125em;
+  background-image: url("../img/phone_delete_off.png");
+}
+.dial-page .dial-pad .dial-top .dial-delete:active {
+  background-image: url("../img/phone_delete_on.png");
+}
+.dial-page .dial-pad .numbers > div {
+  float: left;
+  width: 7.75em;
+  height: 3.5em;
+  margin-right: 0.5625em;
+  margin-bottom: 0.5625em;
+}
+.dial-page .dial-pad .dial-btns {
+  clear: both;
+}
+.dial-page .dial-pad .numbers {
+  float: left;
+  width: 24.9375em;
+}
+.dial-page .dial-pad .numbers .number1 {
+  background-image: url("../img/phone_number_off_1.png");
+}
+.dial-page .dial-pad .numbers .number2 {
+  background-image: url("../img/phone_number_off_2.png");
+}
+.dial-page .dial-pad .numbers .number3 {
+  background-image: url("../img/phone_number_off_3.png");
+}
+.dial-page .dial-pad .numbers .number4 {
+  background-image: url("../img/phone_number_off_4.png");
+}
+.dial-page .dial-pad .numbers .number5 {
+  background-image: url("../img/phone_number_off_5.png");
+}
+.dial-page .dial-pad .numbers .number6 {
+  background-image: url("../img/phone_number_off_6.png");
+}
+.dial-page .dial-pad .numbers .number7 {
+  background-image: url("../img/phone_number_off_7.png");
+}
+.dial-page .dial-pad .numbers .number8 {
+  background-image: url("../img/phone_number_off_8.png");
+}
+.dial-page .dial-pad .numbers .number9 {
+  background-image: url("../img/phone_number_off_9.png");
+}
+.dial-page .dial-pad .numbers .number-mi {
+  background-image: url("../img/phone_number_off_38.png");
+  margin-bottom: 0;
+}
+.dial-page .dial-pad .numbers .number0 {
+  background-image: url("../img/phone_number_off_0.png");
+  margin-bottom: 0;
+}
+.dial-page .dial-pad .numbers .number-jin {
+  background-image: url("../img/phone_number_off_40.png");
+  margin-bottom: 0;
+}
+.dial-page .dial-pad .numbers .number1:active {
+  background-image: url("../img/phone_number_on_1.png");
+}
+.dial-page .dial-pad .numbers .number2:active {
+  background-image: url("../img/phone_number_on_2.png");
+}
+.dial-page .dial-pad .numbers .number3:active {
+  background-image: url("../img/phone_number_on_3.png");
+}
+.dial-page .dial-pad .numbers .number4:active {
+  background-image: url("../img/phone_number_on_4.png");
+}
+.dial-page .dial-pad .numbers .number5:active {
+  background-image: url("../img/phone_number_on_5.png");
+}
+.dial-page .dial-pad .numbers .number6:active {
+  background-image: url("../img/phone_number_on_6.png");
+}
+.dial-page .dial-pad .numbers .number7:active {
+  background-image: url("../img/phone_number_on_7.png");
+}
+.dial-page .dial-pad .numbers .number8:active {
+  background-image: url("../img/phone_number_on_8.png");
+}
+.dial-page .dial-pad .numbers .number9:active {
+  background-image: url("../img/phone_number_on_9.png");
+}
+.dial-page .dial-pad .numbers .number-mi:active {
+  background-image: url("../img/phone_number_on_38.png");
+}
+.dial-page .dial-pad .numbers .number0:active {
+  background-image: url("../img/phone_number_on_0.png");
+}
+.dial-page .dial-pad .numbers .number-jin:active {
+  background-image: url("../img/phone_number_on_40.png");
+}
+.dial-page .dial-pad .dial-btns .dialing {
+  float: right;
+  width: 6.25em;
+  height: 15.6875em;
+  background-image: url("../img/phone_number_dail_off.png");
+}
+.dial-page .dial-pad .dial-btns .dialing:active {
+  background-image: url("../img/phone_number_dail_on.png");
+}
+.dial-page .dialing-pad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 22.1875em;
+  width: 27.1875em;
+  margin-top: -11.375em;
+  margin-left: -8.5625em;
+  display: none;
+}
+.dial-page .dialing-pad .title {
+  font-size: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 0.375em;
+  color: #07b2b8;
+  text-align: right;
+  padding-right: 5em;
+}
+.dial-page .dialing-pad .title > span {
+  display: block;
+}
+.dial-page .dialing-pad .title .number {
+  float: left;
+  width: 8.125em;
+  overflow: hidden;
+}
+.dial-page .dialing-pad .title .connecting {
+  float: right;
+  margin-left: .5em;
+}
+.dial-page .dialing-pad .layers {
+  position: absolute;
+  width: 17.125em;
+  height: 17.125em;
+}
+.dial-page .dialing-pad .layers .layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.dial-page .dialing-pad .layers .layer.diffusion {
+  -webkit-animation: flux 2s infinite ease-out;
+}
+.dial-page .dialing-pad .layers .outer-bigger {
+  width: 17.125em;
+  height: 17.125em;
+  margin-top: -8.5625em;
+  margin-left: -8.5625em;
+  background-image: url("../img/phone_daling_circle_outer.png");
+}
+.dial-page .dialing-pad .layers .outer {
+  width: 16.125em;
+  height: 16.125em;
+  margin-top: -8.0625em;
+  margin-left: -8.0625em;
+  background-image: url("../img/phone_daling_circle_middle.png");
+}
+.dial-page .dialing-pad .layers .avatar {
+  width: 14em;
+  height: 14em;
+  margin-top: -7em;
+  margin-left: -7em;
+  border-radius: 90% 90%;
+  opacity: 0.8;
+}
+.dial-page .dialing-pad .layers .inner {
+  width: 15.125em;
+  height: 15.125em;
+  margin-top: -7.5625em;
+  margin-left: -7.5625em;
+  background-image: url("../img/phone_daling_circle_inner.png");
+}
+.dial-page .dialing-pad .layers .inner-center {
+  width: 14.0625em;
+  height: 14.0625em;
+  margin-top: -7.03125em;
+  margin-left: -7.03125em;
+  background-image: url("../img/phone_daling_circle_innercenter.png");
+}
+.dial-page .dialing-pad .layers .inner-center .name {
+  position: absolute;
+  bottom: 1.1em;
+  width: 100%;
+  font-size: 1.125em;
+  color: #f3ffff;
+  text-align: center;
+}
+.dial-page .dialing-pad .attribution {
+  position: absolute;
+  width: 12em;
+  height: 1.6429em;
+  line-height: 1.6429em;
+  background-image: url("../img/phone_daling_name_bg.png");
+  bottom: 0;
+  left: 3.7857em;
+  color: #f3ffff;
+  font-size: 0.875em;
+  text-align: center;
+}
+.dial-page .dialing-pad .hang-up-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 6.25em;
+  height: 15.6875em;
+  margin-top: -7.84375em;
+  background-image: url("../img/phone_daling_cancel_normal.png");
+}
+.dial-page .dialing-pad .hang-up-btn:active {
+  background-image: url("../img/phone_daling_cancel_down.png");
+}
+/* contact */
+.phone-book-page #contact-list {
+  top: 3em;
+  bottom: 3em;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.4375em;
+  width: 29.875em;
+  overflow: hidden;
+}
+.phone-book-page #contact-list li {
+  display: block;
+  width: 100%;
+  height: 4.3125em;
+  margin-bottom: 0.625em;
+}
+.phone-book-page #contact-list li:last-child {
+  margin-bottom: 0;
+}
+.phone-book-page #contact-list li .index {
+  float: left;
+  margin-right: 0.8667em;
+  width: 0.8em;
+  font-size: 1.875em;
+  height: 100%;
+  line-height: 2.3em;
+  color: #07b2b8;
+}
+.phone-book-page #contact-list li .info {
+  float: left;
+  width: 26.75em;
+  height: 100%;
+  background-image: url(../img/phone_listbg_13.png);
+}
+.phone-book-page #contact-list li .info:active {
+  background-image: url(../img/phone_listbg_28.png);
+}
+.phone-book-page #contact-list li .info .name {
+  position: absolute;
+  height: 2.5em;
+  line-height: 2.5em;
+  font-size: 1.25em;
+  color: #c8f4ff;
+  margin-left: 3.8em;
+}
+.phone-book-page #contact-list li .info .number {
+  position: absolute;
+  font-size: 0.875em;
+  color: #c8f4ff;
+  margin-left: 5.4286em;
+  margin-top: 3em;
+}
+.phone-book-page #contact-list li .info .off-hook {
+  float: right;
+  width: 5.5em;
+  height: 100%;
+  background-image: url(../img/phone_icon_dailing_13.png);
+}
+.phone-book-page #letter-list {
+  position: absolute;
+  top: 50%;
+  right: 2.5625em;
+  width: 2.875em;
+  height: 22.375em;
+  margin-top: -11.1875em;
+  overflow: hidden;
+  display: none;
+}
+.phone-book-page #letter-list .circle {
+  position: absolute;
+  top: 50%;
+  width: 2.875em;
+  height: 2.875em;
+  margin-top: -1.4375em;
+  background-image: url(../img/phone_list_search_24.png);
+}
+.phone-book-page #letter-list li {
+  display: block;
+  font-size: 1.25em;
+  width: 2.3em;
+  height: 2em;
+  line-height: 2em;
+  margin-bottom: 0.6em;
+  color: #07b2b8;
+  text-align: center;
+}
+.phone-book-page #letter-list li.bigger {
+  font-size: 1.875em;
+  width: 1.5333em;
+  height: 1.5333em;
+  line-height: 1.5333em;
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+.dialog.phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8.75em;
+  margin-left: -19.21875em;
+  width: 38.4375em;
+  height: 17.5em;
+}
+.dialog.phone .content {
+  margin: 2.66666667em 2.2em;
+  font-size: 1.875em;
+  text-align: center;
+}

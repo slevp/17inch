@@ -1,0 +1,27 @@
+{
+  "name": "jquery.lazy",
+  "version": "1.0.1",
+  "description": "A lazy load data for jQuery plugin",
+  "keywords": ["jquery", "lazyload"],
+  "homepage": "https://github.com/Aturan/jquery.lazy",
+  "author": "Aturan",
+  "maintainers": [
+    "Aturan"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aturan/jquery.lazy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aturan/jquery.lazy/issues"
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+	  "buildArgs": "--ignore jquery"
+  }
+}

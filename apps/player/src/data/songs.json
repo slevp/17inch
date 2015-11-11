@@ -1,0 +1,129 @@
+[
+    {
+        "_id": 1,
+        "title": "空白格",
+        "artists": "杨宗纬",
+        "contentURI": "mp3/kongbaige.mp3",
+        "thumbnail": "mp3/thumbnails/yangzongwei.jpg",
+        "duration": "4:48",
+        "album": "我是歌手 第五期",
+        "lyrics": [
+            "其实很简单",
+            "其实很自然",
+            "两个人的爱由两人分担",
+            "其实并不难",
+            "是你太悲观",
+            "隔着一道墙不跟谁分享"
+        ]
+    },
+    {
+        "_id": 2,
+        "title": "父亲",
+        "artists": "筷子兄弟",
+        "contentURI": "mp3/fuqin.mp3",
+        "thumbnail": "mp3/thumbnails/kuaizixiongdi.jpg",
+        "duration": "4:53",
+        "album": "父亲",
+        "lyrics": [
+            "总是向你索取",
+            "却不曾说谢谢你",
+            "直到长大以后",
+            "才懂得你不容易",
+            "每次离开总是",
+            "装作轻松的样子",
+            "微笑着说回去吧",
+            "转身泪湿眼底"
+        ]
+    },
+    {
+        "_id": 3,
+        "title": "你是我的眼",
+        "artists": "林宥嘉",
+        "contentURI": "mp3/nishiwodeyan.mp3",
+        "thumbnail": "mp3/thumbnails/linyoujia.jpg",
+        "duration": "4:45",
+        "album": "爱星光精选 昨天今天明天",
+        "lyrics": [
+            "如果我能看得见",
+            "就能清晰地分辨白天黑夜",
+            "就能准确地在人群中握住你的手",
+            "如果我能看得见",
+            "就能驾车带你到处遨游",
+            "就能惊喜地从背后给你一个拥抱"
+        ]
+    },
+    {
+        "_id": 4,
+        "title": "最爱",
+        "artists": "杨宗纬",
+        "contentURI": "mp3/zuiai.mp3",
+        "thumbnail": "mp3/thumbnails/yangzongwei.jpg",
+        "duration": "5:32",
+        "album": "我是歌手 第十二期",
+        "lyrics": [
+            "红颜若是只为一段情",
+            "就让一生只为这段情",
+            "一生只爱一个人",
+            "一世只怀一种愁",
+            "纤纤小手让你握着",
+            "把它握成你的袖",
+            "纤纤小手让你握着",
+            "解你的愁你的忧"
+        ]
+    },
+    {
+        "_id": 5,
+        "title": "其实都没有",
+        "artists": "杨宗纬",
+        "contentURI": "mp3/qishidoumeiyou.mp3",
+        "thumbnail": "mp3/thumbnails/yangzongwei.jpg",
+        "duration": "3:51",
+        "album": "初.爱",
+        "lyrics": [
+            "从什么都没有的地方",
+            "到什么都没有的地方",
+            "我们 像没发生事一样",
+            "自顾地 走在路上",
+            "忘掉了的人只是泡沫",
+            "用双手轻轻一触就破",
+            "泛黄 有他泛黄的理由",
+            "思念将 越来越薄"
+        ]
+    },
+    {
+        "_id": 6,
+        "title": "山水之间",
+        "artists": "许嵩",
+        "contentURI": "mp3/shanshuizhijian.mp3",
+        "thumbnail": "mp3/thumbnails/xusong.jpg",
+        "duration": "4:36",
+        "album": "不如吃茶去",
+        "lyrics": [
+            "昨夜同门云集 推杯又换盏",
+            "今朝茶凉酒寒 豪言成笑谈",
+            "半生累 尽徒然 碑文完美有谁看",
+            "隐居山水之间 誓与浮名散",
+            "湖畔青石板上 一把油纸伞",
+            "旅人停步折花 淋湿了绸缎",
+            "满树玉瓣多傲然 江南烟雨却痴缠",
+            "花飞雨追一如尘缘理还乱"
+        ]
+    },
+    {
+        "_id": 7,
+        "title": "小苹果",
+        "artists": "筷子兄弟",
+        "contentURI": "mp3/xiaopingguo.mp3",
+        "thumbnail": "mp3/thumbnails/kuaizixiongdi.jpg",
+        "duration": "3:37",
+        "album": "老男孩之猛龙过江 电影原声",
+        "lyrics": [
+            "我种下一颗种子",
+            "终于长出了果实",
+            "今天是个伟大日子",
+            "摘下星星送给你",
+            "拽下月亮送给你",
+            "让太阳每天为你升起"
+        ]
+    }
+]

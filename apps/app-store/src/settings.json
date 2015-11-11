@@ -1,0 +1,10 @@
+{
+    "API_URL": "http://www.topivi.com:3001/api",
+    "APP_KEY": "d7c7ce69d618446d6a84081d62682018",
+    "STORAGE_KEYS": {
+        "categories": "app-store_categories",
+        "apps": "app-store_apps",
+        "home_apps": "home_apps"
+    },
+    "enabled_apps": ["DLNA", "APP Link", "Driving Habits Analysis", "Drive Magazine", "Maintenance"]
+}

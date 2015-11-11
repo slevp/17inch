@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#Video_sel {
+    width:194px;
+    height:196px;
+    background-image:url(../img/DLN/SW/sel/DLN_003_SW_Video_sel.png);
+
+}
+
+.Music_nml {
+    left:60px;
+    top:255px;
+    width:194px;
+    height:196px;
+    background:url(../img/DLN/SW/nml/DLN_003_SW_Music_nml.png) no-repeat 60px 50px;
+}
+
+#SelectedIcon2 {
+    float: left;
+    width:37px;
+    height:588px;
+    background:url(../img/DLN/Icon/DLN_003_Icon_SelectedIcon.png) no-repeat 0 79px;
+}
+
+
+
+
+
+#DLN_004_BG {
+	float: right;
+	width:720px;
+	height:588px;
+	background-image:url(../img/DLN/BG/DLN_004_BG.png);
+}
+
+#DLN_004_BG_Film {
+	position:absolute;
+	left:565px;
+	top:59px;
+	width:415px;
+	height:389px;
+	z-index:2;
+	background-image:url(../img/DLN/BG/DLN_004_BG_Film.png);
+	display:run-in;
+}
+
+#DLN_003_Icon_Bar2 {
+	position:absolute;
+	left:260px;
+	top:86px;
+	width:20px;
+	height:62px;
+	z-index:2;
+	background-image:url(../img/DLN/Icon/DLN_003_Icon_Bar.png);
+	display:run-in;
+}
+
+
+
+#media_video {
+	position:absolute;
+	left:570px;
+	top:77px;
+	width:399px;
+	height:300px;
+	z-index:4;
+}
+
+
+
+
+
+
+#controlKeyStop2 {
+	position:absolute;
+	left:325px;
+	top:480px;
+	width:90px;
+	height:90px;
+	background-image:url(../img/DLN/SW/nml/DLN_004_SW_Stop_nml.png);
+    z-index:4;
+}
+
+#controlKeyStop2:active {
+	background-image:url(../img/DLN/SW/sel/DLN_004_SW_Stop_sel.png);
+}
+
+#controlKeyPre2 {
+	position:absolute;
+	left:457px;
+	top:480px;
+	width:90px;
+	height:90px;
+	background-image:url(../img/DLN/SW/nml/DLN_004_SW_Previous_nml.png);
+    z-index:4;
+}
+
+#controlKeyPre2:active {
+	background-image:url(../img/DLN/SW/sel/DLN_004_SW_Previous_sel.png);
+}
+
+#controlKeyPlay2 {
+	position:absolute;
+	left:573px;
+	top:465px;
+	width:120px;
+	height:120px;
+    z-index:4;
+}
+
+
+#controlKeyNext2 {
+	position:absolute;
+	left:722px;
+	top:480px;
+	width:90px;
+	height:90px;
+	background-image:url(../img/DLN/SW/nml/DLN_003_SW_Next_nml.png);
+    z-index:4;
+}
+
+#controlKeyNext2:active {
+	background-image:url(../img/DLN/SW/sel/DLN_003_SW_Next_sel.png);
+}
+
+#voiceControlImg2 {
+	position:absolute;
+	left:853px;
+	top:480px;
+	width:90px;
+	height:90px;
+	background-image:url(../img/DLN/SW/nml/DLN_004_SW_Volume_nml.png);
+    z-index:4;
+}
+
+#voiceControlImg2:active {
+	background-image:url(../img/DLN/SW/sel/DLN_004_SW_Volume_sel.png);
+}
+
+
+#controlKeyFull2 {
+	position:absolute;
+	left:907px;
+	top:378px;
+	width:64px;
+	height:50px;
+	z-index:4;
+
+}
+
+#progressBar2 {
+    position:absolute;
+    left:570px;
+    top:390px;
+    width:275px;
+    height:8px;
+    z-index: 4;
+}
+#progressBarBack2 {
+    position:absolute;
+    left: 17px;
+    top: 14px;
+    width: 247px;
+    height: 8px;
+}
+
+#progressBarTop2 {
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    width: 0;
+    height: 8px;
+
+}
+
+#progressBarPanel2 {
+    position: absolute;
+    left: 17px;
+    top: 0;
+    width: 280px;
+    height: 30px;
+    /*border:1px solid #c3c3c3;*/
+}
+
+#timeRemain2 {
+    position:absolute;
+    left:845px;
+    top:400px;
+    width:47px;
+    height:19px;
+    font-family:Arial;
+    font-size:15px;
+    color:#FFFFFF;
+    white-space:nowrap;
+    z-index: 4;
+}
+
+
+
+#voiceControl2 {
+    position:absolute;
+    left:890px;
+    top:360px;
+    width:30px;
+    height:110px;
+    z-index:5;
+}
+
+#voiceBar2 {
+    position:absolute;
+    left:0;
+    top:0;
+    width:30px;
+    height:118px;
+    display:none;
+}
+
+#voiceBarBack2 {
+    position:absolute;
+    left:0;
+    top:0;
+    width:10px;
+    height:105px;
+}
+
+#voiceBarTop2 {
+    position: absolute;
+    left: 0;
+    top:10px;
+    width: 10px;
+    height: 0;
+}
+#voiceBarTop_Icon2 {
+    position: absolute;
+    left: -8px;
+    top:-20px;
+    width: 26px;
+    height: 29px;
+}
+
+#voiceBarPanel2 {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 30px;
+    height: 120px;
+    z-index: 6;
+    /* border:1px solid #009; */
+}

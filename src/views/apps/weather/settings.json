@@ -1,0 +1,121 @@
+{
+    "status_map": {
+        "晴": {
+            "icon": "sun"
+        },
+        "多云转晴": {
+            "icon": "sun"
+        },
+        "多云": {
+            "icon": "cloud"
+        },
+        "晴转多云": {
+            "icon": "cloud"
+        },
+        "阴转多云": {
+            "icon": "cloud"
+        },
+        "阴": {
+            "icon": "shade"
+        },
+        "多云转阴": {
+            "icon": "shade"
+        },
+        "小雨转阴": {
+            "icon": "shade"
+        },
+        "阵雨": {
+            "icon": "shower"
+        },
+        "雷阵雨": {
+            "icon": "thundershower"
+        },
+        "雷阵雨伴有冰雹": {
+            "icon": "thundershower"
+        },
+        "雨夹雪": {
+            "icon": "rain and snow"
+        },
+        "小雨": {
+            "icon": "light rain"
+        },
+        "阴转小雨": {
+            "icon": "light rain"
+        },
+        "中雨": {
+            "icon": "moderate rain"
+        },
+        "大雨": {
+            "icon": "heavy rain"
+        },
+        "暴雨": {
+            "icon": "hard rain"
+        },
+        "大暴雨": {
+            "icon": "downpour"
+        },
+        "特大暴雨": {
+            "icon": "torrential rain"
+        },
+        "阵雪": {
+            "icon": "snow shower"
+        },
+        "小雪": {
+            "icon": "light snow"
+        },
+        "中雪": {
+            "icon": "moderate snow"
+        },
+        "大雪": {
+            "icon": "heavy snow"
+        },
+        "暴雪": {
+            "icon": "snowstorm"
+        },
+        "雾": {
+            "icon": "fog"
+        },
+        "冻雨": {
+            "icon": "snow ice"
+        },
+        "沙尘暴": {
+            "icon": "sand"
+        },
+        "小雨转中雨": {
+            "icon": "moderate rain"
+        },
+        "中雨转大雨": {
+            "icon": "heavy rain"
+        },
+        "大雨转暴雨": {
+            "icon": "hard rain"
+        },
+        "暴雨转大暴雨": {
+            "icon": "downpour"
+        },
+        "大暴雨转特大暴雨": {
+            "icon": "torrential rain"
+        },
+        "小雪转中雪": {
+            "icon": "moderate snow"
+        },
+        "中雪转大雪": {
+            "icon": "heavy snow"
+        },
+        "大雪转暴雪": {
+            "icon": "snowstorm"
+        },
+        "浮尘": {
+            "icon": "sand"
+        },
+        "扬沙": {
+            "icon": "sand"
+        },
+        "强沙尘暴": {
+            "icon": "sand"
+        },
+        "霾": {
+            "icon": "fog"
+        }
+    }
+}

@@ -1,0 +1,248 @@
+.VR {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/VR/BG_03.png");
+}
+
+
+.bg-bottom {
+    position: absolute;
+    width: 100%;
+    height: 98px;
+    bottom: 0;
+    background-image: url("../img/VR/BG2_06.png");
+}
+
+.VR-animation1 {
+    position: absolute;
+    left: -34px;
+    top: 0;
+    width: 255px;
+    height: 98px;
+    background: url("../img/VR/3.gif");
+    background-position: center;
+    background-size: 255px 229px;
+}
+.VR-animation1.select {
+    background: url("../img/VR/2.gif");
+    background-position: center;
+    background-size: 255px 229px;
+}
+
+.VR-animation2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 98px;
+    background: url("../img/VR/1.gif") no-repeat center;
+    background-size: 255px 229px;
+    display: none;
+}
+
+.VR .machine-words {
+    position: absolute;
+    left: 255px;
+    width: 667px;
+    height: 100%;
+    line-height: 98px;
+    text-align: left;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+.VR .title {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.VR .content {
+    width: 100%;
+    height: 365px;
+}
+
+.VR .content .command-list {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.VR .content .command-list .command {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 70px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.VR .content .command-list .answer {
+    width: 96%;
+    padding: 2%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.oil-header {*/
+    /*float: left;*/
+    /*width: 100%;*/
+    /*height: 76px;*/
+    /*color: #1DBABE;*/
+/*}*/
+/*.oil-header .title {*/
+    /*float: left;*/
+    /*margin-left: 340px;*/
+    /*width: 74px;*/
+    /*height: 100%;*/
+    /*font-size: 36px;*/
+    /*line-height: 90px;*/
+    /*font-weight: bolder;*/
+/*}*/
+/*.oil-header .sub-title {*/
+    /*float: left;*/
+    /*width: 144px;*/
+    /*height: 100%;*/
+    /*line-height: 100px;*/
+/*}*/
+/*.oil-header .date {*/
+    /*float: left;*/
+    /*width: 140px;*/
+    /*height: 100%;*/
+    /*margin-left: 140px;*/
+    /*line-height: 110px;*/
+    /*font-size: 18px;*/
+/*}*/
+/*.oil-split {*/
+    /*float: left;*/
+    /*width: 100%;*/
+    /*height: 2px;*/
+    /*background: url("../img/VR/BG_03.png") no-repeat center;*/
+    /*background-size: 547px 2px;*/
+/*}*/
+/*.oil-info {*/
+    /*float: left;*/
+    /*margin-top: 80px;*/
+    /*width: 50%;*/
+    /*height: 62px;*/
+/*}*/
+/*.oil-info .left-info {*/
+    /*float: left;*/
+    /*width: 50px;*/
+    /*height: 100%;*/
+    /*padding: 0 0 0 80px;*/
+/*}*/
+/*.oil-info .left-info .oil-type {*/
+    /*font-size: 26px;*/
+    /*color: #1DBABE;*/
+    /*font-weight: bolder;*/
+    /*font-style: italic;*/
+/*}*/
+/*.oil-info .left-info .oil-name {*/
+    /*margin-left: 8px;*/
+    /*margin-top: 14px;*/
+    /*font-size: 18px;*/
+    /*color: #40757B;*/
+    /*font-weight: bolder;*/
+    /*font-style: italic;*/
+/*}*/
+/*.oil-info .waku {*/
+    /*float: left;*/
+    /*width: 177px;*/
+    /*height: 62px;*/
+    /*margin-left: 18px;*/
+    /*background-image: url("../img/VR/oil/tu_07.png");*/
+/*}*/
+/*.oil-info .waku .hundred {*/
+    /*float: left;*/
+    /*margin-left: 25px;*/
+    /*margin-top: 9px;*/
+    /*width: 27px;*/
+    /*height: 44px;*/
+/*}*/
+/*.oil-info .waku .ten {*/
+    /*float: left;*/
+    /*margin-left: 3px;*/
+    /*margin-top: 9px;*/
+    /*width: 27px;*/
+    /*height: 44px;*/
+/*}*/
+/*.oil-info .waku .dot {*/
+    /*float: left;*/
+    /*margin-left: 3px;*/
+    /*margin-top: 48px;*/
+    /*width: 6px;*/
+    /*height: 5px;*/
+    /*background-image: url('../img/VR/oil/p.png');*/
+/*}*/
+/*.oil-info .waku .decile {*/
+    /*float: left;*/
+    /*margin-left: 3px;*/
+    /*margin-top: 9px;*/
+    /*width: 27px;*/
+    /*height: 44px;*/
+/*}*/
+/*.oil-info .waku .percentile {*/
+    /*float: left;*/
+    /*margin-left: 3px;*/
+    /*margin-top: 9px;*/
+    /*width: 27px;*/
+    /*height: 44px;*/
+/*}*/
+/*.oil-info .waku .number0 {*/
+    /*background-image: url('../img/VR/oil/0.png');*/
+/*}*/
+/*.oil-info .waku .number1 {*/
+    /*background-image: url('../img/VR/oil/1.png');*/
+/*}*/
+/*.oil-info .waku .number2 {*/
+    /*background-image: url('../img/VR/oil/2.png');*/
+/*}*/
+/*.oil-info .waku .number3 {*/
+    /*background-image: url('../img/VR/oil/3.png');*/
+/*}*/
+/*.oil-info .waku .number4 {*/
+    /*background-image: url('../img/VR/oil/4.png');*/
+/*}*/
+/*.oil-info .waku .number5 {*/
+    /*background-image: url('../img/VR/oil/5.png');*/
+/*}*/
+/*.oil-info .waku .number6 {*/
+    /*background-image: url('../img/VR/oil/6.png');*/
+/*}*/
+/*.oil-info .waku .number7 {*/
+    /*background-image: url('../img/VR/oil/7.png');*/
+/*}*/
+/*.oil-info .waku .number8 {*/
+    /*background-image: url('../img/VR/oil/8.png');*/
+/*}*/
+/*.oil-info .waku .number9 {*/
+    /*background-image: url('../img/VR/oil/9.png');*/
+/*}*/

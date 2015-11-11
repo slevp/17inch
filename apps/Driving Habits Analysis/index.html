@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" href="css/DRA001.css" rel="Stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>       <!--highcharts头文件-->
+    <script type="text/javascript" src="js/exporting.js"></script>        <!--highcharts头文件-->
+    <script type="text/javascript" src="js/changeDiv.js"></script>
+     <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+</head>
+<body onload="refreshTime()">
+<div id="DRA001">
+    <div id="DRA_001_BG"> </div>
+
+    <div id="DRA_001_Icon_Down01"></div>
+    <div id="DRA_001_Icon_Down02"></div>
+    <div id="DRA_001_Icon_LeftBG"></div>
+    <div id="DRA_001_Icon_Middle"></div>
+    <div id="DRA_001_Icon_Right"></div>
+    <div id="DRA_001_SW_LastMonth_nml" onclick="lastweek()"></div>
+    <div id="DRA_001_SW_LastMonth_dis"></div>
+    <div id="DRA_001_SW_NextMonth_nml" onclick="nextweek()"></div>
+    <div id="DRA_001_SW_NextMonth_dis"></div>
+    <div id="DRA_001_Icon_Data"></div>
+    <!--dummy_down区域内的数据-->
+    <div id="dummy_down_score">
+        <ul><strong id="dummy_down_score_1">95</strong>分</ul>
+    </div>
+    <div id="dummy_down_plus">
+        <ul><strong id="speed_plus_1">3</strong>次</ul>
+    </div>
+    <div id="dummy_down_plus_time">
+         <ul><strong id="plus_time_1">11:30</strong></ul>
+
+    </div>
+    <div id="dummy_down_minus">
+        <ul><strong id="speed_minus_1">1</strong>次</ul>
+    </div>
+    <div id="dummy_down_minus_time">
+        <ul><strong id="minus_time_1">10:10</strong></ul>
+    </div>
+    <div id="dummy_down_turn">
+        <ul><strong id="turn_num">0</strong>次</ul>
+    </div>
+    <div id="dummy_down_turn_time">
+        <ul><strong id="turn_time_1">13:10</strong></ul>
+    </div>
+    <!--周速度油量统计-->
+    <div id="dummy_down_ave">
+        <ul><strong id="speed_ave_week">25</strong> KM/H</ul>
+        <ul><strong id="speed_max_week">156</strong> KM/H</ul>
+        <ul><strong id="fuel_ave_week">8</strong> L/100KM</ul>
+    </div>
+    <!--dummy_middle 区域内的数据-->
+    <div id="dummy_Middle_score">
+        <ul><strong id="score_ave" style="font-size: 48px">83</strong>分</ul>
+    </div>
+    <!--dummy_right 区域内的数据-->
+    <div id="dummy_Right_data">
+        <ul><strong id="total_mile">10225</strong>KM</ul>
+        <ul><strong id="speed_ave">52</strong>KM/H</ul>
+        <ul><strong id="fuel_ave">8</strong>L/100KM</ul>
+        <ul><strong id="speed_max">156</strong>KM/H</ul>
+    </div>
+
+<div id="dummy_left_chart1" style="min-width:554px;height:285px"></div>
+
+<!--X时间轴-->
+    <div id="timer_1"></div>
+    <div id="timer_2"></div>
+    <div id="timer_3"></div>
+    <div id="timer_4"></div>
+    <div id="timer_5"></div>
+    <div id="timer_6"></div>
+    <div id="timer_7"></div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

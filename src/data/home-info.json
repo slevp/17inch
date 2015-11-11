@@ -1,0 +1,22 @@
+{
+    "header": {
+
+    },
+    "footer": {
+        "nav-item-count": 9,
+        "left-app": "acn",
+        "right-app": "player"
+    },
+    "location": "上海市",
+    "short_location": "上海",
+    "weather": {
+        "default": {
+            "iconPath": "img/dialog-apps/weather/brighter-icon/cloud.png",
+            "temperature": {
+                "from": 23,
+                "to": 28
+            },
+            "status": "多云转晴"
+        }
+    }
+}

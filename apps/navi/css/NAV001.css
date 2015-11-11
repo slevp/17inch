@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+#iCenter {
+    position:absolute;
+    top: 0px;
+    left:0px;
+    width:980px;
+    height:588px;
+    z-index:1;
+}
+
+
+body, html,#allmap {
+    width: 980px;
+    height: 588px;
+    overflow: hidden;
+    margin:0;
+    z-index: 2;
+}
+
+#left_navibar{
+    position:absolute;
+    display:block;
+    top: 0px;
+    left: 0px;
+
+    width: 172px;
+    height: 588px;
+    z-index: 10;
+    background-image:url(../img/BG_02.png);
+}
+#baidu_navibar{
+    position:absolute;
+    display:block;
+    top: 23px;
+    left: 0px;
+    width: 172px;
+    height: 84px;
+    z-index: 11;
+    background-image:url(../img/bd_nml.png);
+}
+
+#gaode_navibar{
+    position:absolute;
+    display:block;
+    top: 119px;
+    left: 0px;
+    width: 172px;
+    height: 84px;
+    z-index: 11;
+    background-image:url(../img/gd_nml.png);
+}
+#google_navibar{
+    position:absolute;
+    display:block;
+    top:215px;
+    left: 0px;
+    width: 172px;
+    height: 84px;
+    z-index: 11;
+    background-image:url(../img/gg_nml.png);
+}
+#plus_navibar{
+    position:absolute;
+    display:block;
+    top:311px;
+    left: 0px;
+    width: 172px;
+    height: 84px;
+    z-index: 11;
+    background-image:url(../img/plus_nml.png);
+}

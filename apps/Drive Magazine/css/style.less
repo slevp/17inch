@@ -1,0 +1,200 @@
+
+@charset "utf-8";
+@import "../../../css/basic";
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; /*初始状态 透明度为0*/
+  }
+  50% {
+    opacity: 0.5; /*中间状态 透明度为0*/
+  }
+  100% {
+    opacity: 0; /*结尾状态 透明度为1*/
+  }
+}
+
+.page {
+  .fill-parent;
+  display: none;
+  &.home {
+     background-color: black;
+    .main {
+      .all-center(641 , 410);
+      overflow: visible;
+      ul {
+        width: 100%;
+        height: 100%;
+        .column {
+          .width(641);
+          .height(135);
+          .background-size(641, 41);
+          background-image: url("../img/shelf.png");
+          .background-position(0, 94);
+          .books {
+            position: absolute;
+            .margin-top(20);
+            .margin-left(92);
+            .width(560);
+            .height(94);
+            z-index: 1;
+            .item {
+              float: left;
+              .margin-right(62);
+              .width(70);
+              .height(94);
+              &.no-data {
+                img {
+                  opacity: 0.4;
+                }
+                .label {
+                  display: block;
+                }
+              }
+              img {
+                .width(70);
+                .height(94);
+              }
+              .label {
+                display: none;
+                position: relative;
+                .top(-30, 14);
+                .font-size(14);
+                color: rgb(114, 158, 158);
+                text-align: center;
+                font-weight: bold;
+              }
+            }
+          }
+
+        }
+      }
+
+      .shop-btn {
+        position: absolute;
+        .width(50);
+        .height(25);
+        .right(0);
+        .top(10);
+        border: 1px solid #2fd4d9;
+        z-index: 1;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          .font-size(20);
+          .line-height(25, 20);
+          text-align: center;
+          color: #2fd4d9;
+
+        }
+      }
+    }
+  }
+  &.read {
+    .fill-parent;
+    .head {
+      .flow-top(52);
+      opacity: 0.9;
+      background-color: #056672;
+      .title {
+        .line-height(52, 18);
+        text-align: center;
+        color: #c8f4ff;
+        .font-size(18);
+
+      }
+      .back-btn {
+        position: absolute;
+        .left(29, 18);
+        .top(20, 18);
+        .width(11);
+        .height(17);
+        background-image: url("../img/button_back_down.png");
+        &.active {
+          background-image: url("../img/button_back_normal.png");
+        }
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+        }
+      }
+      .bookrack {
+        position: absolute;
+        .top(0);
+        .left(29 + 17, 18);
+        .line-height(52, 18);
+        .font-size(18);
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: #3ad9df;
+        }
+      }
+    }
+    .content {
+      position: absolute;
+      .fill-parent;
+      background-color: rgba(0, 0, 0, 0.28);
+      .imgs {
+        height: 100%;
+       //width: 5000px;
+         li {
+           float: left;
+           height: 100%;
+           width: 100%;
+           text-align: center;
+           img {
+             max-height: 100%;
+           }
+        }
+      }
+      .progress {
+        position: absolute;
+        .width(21);
+        .height(320);
+        .right(20);
+        .top(60);
+        overflow: visible;
+        .progress-line {
+          position: absolute;
+          .width(2);
+          .height(304);
+          .right(20);
+          .top(7);
+          .bottom(7);
+          background-color: #6a9191;
+        }
+        .circle {
+          position: absolute;
+          .width(21);
+          .height(21);
+          .right(10);
+          .margin-left(0);
+          .margin-top(-1);
+          .margin-bottom(-1);
+          background-image: url("../img/icon_pull.png");
+        }
+      }
+    }
+  }
+  &.active {
+    display: block;
+  }
+}

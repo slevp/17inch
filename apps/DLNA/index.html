@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DNL001</title>
+<link type="text/css" href="css/DNL001.css" rel="Stylesheet" />
+<link type="text/css" href="css/DNL002.css" rel="Stylesheet" />
+<link type="text/css" href="css/DNL003.css" rel="Stylesheet" />
+<link type="text/css" href="css/DNL004.css" rel="Stylesheet" />
+<link type="text/css" href="css/DNL005.css" rel="Stylesheet" />
+<link type="text/css" href="css/Scroll.css" rel="Stylesheet" />
+<link type="text/css" href="css/jquery.galleryview-3.0-dev.css" rel="Stylesheet" />
+
+
+<script src="lib/PictureReader/jquery.min.js"></script>
+<script src="lib/Jquery/jquery.rotate.min.js"></script>
+
+<script src="js/Music/main.js"></script>
+<script src="js/Music/audioPlayer.js"></script>
+
+<script src="js/Video/main_Video.js"></script>
+<script src="js/Video/videoPlayer.js"></script>
+<script src="js/dlna.js"></script>
+<script src="js/player.js"></script>
+<script src="lib/build/iscroll.js"></script>
+
+<script src="js/DNL001/001.js"></script>
+
+
+<script src="lib/PictureReader/jquery-ui.min.js"></script>
+<script src="lib/PictureReader/jquery.timers-1.2.js"></script>
+<script src="lib/PictureReader/jquery.easing.1.3.js"></script>
+<script src="lib/PictureReader/jquery.galleryview-3.0-dev.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="BG">
+
+    <div id="ScreenConnect">
+        <div id="DLN_001_BG_Connecting">
+        </div>
+        <div id="loading"></div>
+    </div>
+
+
+
+    <div id="ScreenHome" style="display: none">
+        <div id="Video"   class="Tab_Button" onmouseup="Tab_Click('Video')"></div>
+        <div id="Music"   class="Tab_Button" onmouseup="Tab_Click('Music')"></div>
+        <div id="Picture" class="Tab_Button" onmouseup="Tab_Click('Picture')"></div>
+    </div>
+
+
+
+    <div id="ScreenMusic" style="display: none">
+        <div class="Tab_Left">
+            <div class="Video_nml"   onmouseup="Tab_Click('Video')"></div>
+            <div id="Music_sel">
+                <img src="img/DLN/SW/sel/DLN_003_SW_Picture_light01_sel.png"/>
+            </div>
+            <div class="Picture_nml" onmouseup="Tab_Click('Picture')"></div>
+        </div>
+        <div id="SelectedIcon1"></div>
+
+        <div id="DLN_003_BG">
+            <div id="wrapper">
+                <div id="scroller">
+                    <ul></ul>
+                </div>
+            </div>
+            <!--<div id="DLN_003_Icon_Bar1"></div>-->
+
+            <audio id="mediaIcon_audio" style="display:inline"></audio>
+            <div id="songTitleText" class="songContent"></div>
+            <div id="songArtistText" class="songContent"></div>
+            <div id="timeRemain"  class="timeRemain">
+                <p><span id="songDurationTime">00:00</span></p>
+            </div>
+
+            <div id="controlKey" class="controlKey">
+                <img id="controlKeyPlay" src="img/DLN/SW/nml/DLN_003_SW_Play_nml.png"name="play" onMouseDown="controlKeyDown('Play');" onMouseUp="controlKeyUp('Play');" />
+                <div id="controlKeyPre"   onMouseUp="controlKeyUp('Pre');"></div>
+                <div id="controlKeyNext"  onMouseUp="controlKeyUp('Next');"></div>
+                <img id="controlKeyRandom" src = "img/DLN/SW/nml/DLN_003_SW_Cycle_nml.png" name="order"  onMouseDown="controlKeyDown('Random');" onMouseUp="controlKeyUp('Random');" />
+                <div id="voiceControlImg" name="volume" onClick="showVoiceBar()" ></div>
+            </div>
+
+            <div id="progressBar" class="">
+                <img id="progressBarBack" src="img/DLN/Icon/DLN_003_Icon_ProgressBG.png"/>
+                <img id="progressBarTop" src="img/DLN/Icon/DLN_003_Icon_Progress.png"/>
+                <div id="progressBarPanel" onMouseDown="progress_pressDown(event)" onMouseMove="progress_Move(event)" onMouseUp="progress_pressUp()" onMouseOut="progress_pressUp()"></div>
+            </div>
+
+            <div id="voiceControl" class="">
+                <div id="voiceBar">
+                    <img id="voiceBarBack" src="img/DLN/Icon/Horizon_Voice_Grey.png" />
+                    <img id="voiceBarTop" src="img/DLN/Icon/Horizon_Voice_Blue.png" />
+                    <img id="voiceBarTop_Icon" src="img/DLN/Icon/VoiceSet_nml.png" />
+                    <div id="voiceBarPanel" onMouseDown="voice_pressDown(event)" onMouseMove="voice_Move(event)" onMouseUp="voice_pressUp()" onMouseOut="voice_pressUp()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--VideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideoVideo-->
+
+    <div id="ScreenVideo"  style="display: none">
+        <div id="Tab_Left" class="Tab_Left">
+            <div id="Video_sel">
+                <img src="img/DLN/SW/sel/DLN_003_SW_Picture_light01_sel.png"  />
+            </div>
+            <div class="Music_nml"   onmouseup="Tab_Click('Music')"></div>
+            <div class="Picture_nml" onmouseup="Tab_Click('Picture')"></div>
+        </div>
+        <div id="SelectedIcon2"></div>
+
+        <video id="media_video"  onclick="VideoOnclick()"></video>
+
+        <div id="DLN_004_BG">
+            <div id="wrapper2">
+                <div id="scroller2">
+                    <ul></ul>
+                </div>
+            </div>
+            <!--<div id="DLN_003_Icon_Bar2"></div>-->
+            <div id="DLN_004_BG_Film"></div>
+
+        </div>
+
+        <div id="controlKey2" class="controlKey">
+            <img id="controlKeyPlay2" src="img/DLN/SW/nml/DLN_003_SW_Play_nml.png"name="play" onMouseDown="controlKeyDown2('Play');" onMouseUp="controlKeyUp2('Play');" />
+            <div id="controlKeyStop2"   onMouseUp="controlKeyUp2('Stop');"></div>
+            <div id="controlKeyPre2"   onMouseUp="controlKeyUp2('Pre');"></div>
+            <div id="controlKeyNext2"  onMouseUp="controlKeyUp2('Next');"></div>
+            <img id="controlKeyFull2" src = "img/DLN/SW/nml/DLN_004_SW_FullScreen_nml.png" name="normal"  onMouseDown="controlKeyDown2('Full');" onMouseUp="controlKeyUp2('Full');" />
+            <div id="voiceControlImg2" name="volume" onClick="showVoiceBar2()" ></div>
+
+            <div id="progressBar2" class="">
+                <img id="progressBarBack2" src="img/DLN/Icon/DLN_003_Icon_ProgressBG.png"/>
+                <img id="progressBarTop2" src="img/DLN/Icon/DLN_003_Icon_Progress.png"/>
+                <div id="progressBarPanel2" onMouseDown="progress_pressDown2(event)" onMouseMove="progress_Move2(event)" onMouseUp="progress_pressUp2()" onMouseOut="progress_pressUp2()"></div>
+            </div>
+
+            <div id="timeRemain2"  class="timeRemain">
+                <p><span id="songDurationTime2">00:00</span></p>
+            </div>
+
+            <div id="voiceControl2" class="">
+                <div id="voiceBar2">
+                    <img id="voiceBarBack2" src="img/DLN/Icon/Voice_Grey.png" />
+                    <img id="voiceBarTop2" src="img/DLN/Icon/Voice_Blue.png" />
+                    <img id="voiceBarTop_Icon2" src="img/DLN/Icon/VoiceSet_nml.png" />
+                    <div id="voiceBarPanel2" onMouseDown="voice_pressDown2(event)" onMouseMove="voice_Move2(event)" onMouseUp="voice_pressUp2()" onMouseOut="voice_pressUp2()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ScreenPicture"  style="display: none">
+
+        <div class="Tab_Left">
+            <div class="Video_nml" onmouseup="Tab_Click('Video')"></div>
+            <div class="Music_nml" onmouseup="Tab_Click('Music')"></div>
+            <div id="Picture_sel" >
+                <img src="img/DLN/SW/sel/DLN_003_SW_Picture_light01_sel.png"  />
+            </div>
+        </div>
+        <div id="SelectedIcon3"></div>
+
+        <ul id="myGallery"></ul>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

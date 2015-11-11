@@ -1,0 +1,19 @@
+{
+    "family": "ekai",
+    "name": "phone",
+    "version": "1.0.0",
+    "spm": {
+        "alias": {
+            "jquery": "jquery",
+            "backbone": "backbone",
+            "underscore": "underscore",
+            "jquery-touch": "jquery-touch",
+            "jquery-drag": "jquery-drag",
+            "easing": "easing",
+            "iscroll": "iscroll",
+            "store": "store",
+            "topivi": "topivi"
+        },
+        "output": ["index.js"]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "API_URL": "http://www.topivi.com:3001/api",
+    "APP_KEY": "d7c7ce69d618446d6a84081d62682018",
+//    "API_URL": "http://127.0.0.1:3000/api",
+//    "APP_KEY": "0e258cdaa9453005ee207693a72736a7",
+    "STORAGE_KEYS": {
+        "all_categories": "qtfm_all_categories",
+        "civil_categories": "qtfm_civil_categories",
+        "international_categories": "qtfm_international_categories",
+        "all_channels": "qtfm_all_channels",
+        "last_played_channel": "qtfm_last_played_channel",
+        "lately_played_channels": "qtfm_lately_played_channels",
+        "favorite_channels": "qtfm_favorite_channels"
+    },
+    "URLs": {
+        "radio_category": "/qtfm/category-list",
+        "channel_list": "/qtfm/channel-list",
+        "program_list": "/qtfm/program-list"
+    },
+    "defaults": {
+        "thumbnail_url": "img/picture.png"
+    },
+    "request_timeout": 8000
+}

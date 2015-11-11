@@ -1,0 +1,43 @@
+[
+    {
+        "_id": 1,
+        "name": "home",
+        "order": 1,
+        "life_cycle": "*"
+    },
+    {
+        "_id": 2,
+        "name": "navi",
+        "order": 2,
+        "life_cycle": "*"
+    },
+    {
+        "_id": 3,
+        "name": "phone",
+        "order": 3
+    },
+    {
+        "_id": 4,
+        "name": "acn",
+        "order": 4,
+        "life_cycle": "*"
+    },
+    {
+        "_id": 5,
+        "name": "player",
+        "order": 5,
+        "life_cycle": "*"
+    },
+    {
+        "_id": 6,
+        "name": "app-store",
+        "order": 6,
+        "life_cycle": "*"
+    },
+    {
+        "_id": 7,
+        "name": "QTFM",
+        "order": 7,
+        "life_cycle": "*"
+    }
+]

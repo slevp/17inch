@@ -1,0 +1,76 @@
+{
+    "Data": {
+        "engine":{
+            "latelyTime" : "2014年10月12日 周日",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "fuel":{
+            "latelyTime" : "2014年10月11日 周六",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "cartridge":{
+            "latelyTime" : "2014年10月13日 周一",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "998.00 公里",
+            "remainMileage": "460.00 公里"
+        },
+        "tyre":{
+            "latelyTime" : "2014年10月13日 周一",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "469.00 公里",
+            "remainMileage": "10.00 公里"
+        },
+        "cell":{
+            "latelyTime" : "2014年10月9日 周四",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "130.00 公里",
+            "remainMileage": "270.00 公里"
+        },
+        "break": {
+            "latelyTime" : "2014年10月8日 周三",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "brush":{
+            "latelyTime" : "2014年8月1日 周五",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "refrigerator":{
+            "latelyTime" : "2014年8月2日 周六",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "brake-oil":{
+            "latelyTime" : "2014年8月13日 周三",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "transmission-oil":{
+            "latelyTime" : "2014年9月17日 周三",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "service":{
+            "latelyTime" : "2014年9月1日 周一",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        },
+        "filtration":{
+            "latelyTime" : "2014年9月13日 周六",
+            "nowTime": "2014年10月13日 周一",
+            "mileage": "1000.00 公里",
+            "remainMileage": "500.00 公里"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "STORAGE_KEYS": {
+        "songs": "player_songs",
+        "last_played": "player_last_played_index"
+    }
+}

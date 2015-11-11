@@ -1,0 +1,119 @@
+a {
+  text-decoration: none;
+}
+* {
+margin: 0;
+padding: 0;
+}
+body {
+  font-family: "Microsoft Yahei", "SimHei";
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+  body {
+    font-size: 20.416px;
+  }
+}
+@media screen and (max-width: 979px) and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url('../img/BG.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.page .nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10.5em;
+  height: 21em;
+  left: 0em;
+  width: 10.75em;
+}
+.page .nav .item {
+  width: 10.75em;
+  height: 5.25em;
+}
+.page .nav .item.baidu {
+  background-image: url('../img/bd_nml.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.page .nav .item.baidu.active {
+  background-image: url('../img/bd_sel.png');
+}
+.page .nav .item.gaode {
+  background-image: url('../img/gd_nml.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.page .nav .item.gaode.active {
+  background-image: url('../img/gd_sel.png');
+}
+.page .nav .item.google {
+  background-image: url('../img/gg_nml.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.page .nav .item.google.active {
+  background-image: url('../img/gg_sel.png');
+}
+.page .nav .item.more {
+  background-image: url('../img/plus_sel.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.page .nav .item.more.active,
+.page .nav .item.more:active {
+  background-image: url('../img/plus_nml.png');
+}
+.page .content {
+  left: 10.75em;
+  right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.page .content .map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.page .content .map.active {
+  display: block;
+}
+.page .content.expanded {
+  left: 0em;
+}

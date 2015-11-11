@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+#DRA_001_BG {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:980px;
+	height:588px;
+	z-index:0;
+	background-image:url(../img/BG/DRA_001_BG.png);
+	display:run-in;
+}
+
+
+#DRA_001_Icon_Down01 {
+	position:absolute;
+	top:450px;
+	left:0px;
+	width:727px;
+	height:138px;
+	z-index:1;
+	background-image:url(../img/Icon/DRA_001_Icon_Down01.png);
+	display:run-in;
+}
+
+
+
+#DRA_001_Icon_Down02 {
+	position:absolute;
+	top:450px;
+	left:770px;
+	width:92px;
+	height:138px;
+	z-index:1;
+	background-image:url(../img/Icon/DRA_001_Icon_Down02.png);
+	display:run-in;
+}
+
+#DRA_001_Icon_LeftBG {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:554px;
+	height:349px;
+	z-index:1;
+	background-image:url(../img/Icon/DRA_001_Icon_LeftBG.png);
+}
+
+
+#DRA_001_Icon_Data {
+	position:absolute;
+	top:98px;
+	left:500px;
+	width:50px;
+	height:50px;
+	z-index:10;
+	background-image:url(../img/Icon/DRA_001_Icon_Data.png);
+}
+
+
+#DRA_001_Icon_Middle {
+	position:absolute;
+	top:0px;
+	left:554px;
+	width:100px;
+	height:261px;
+	z-index:1;
+	background-image:url(../img/Icon/DRA_001_Icon_Middle.png);	
+}
+
+#DRA_001_Icon_Right {
+	position:absolute;
+	top:0px;
+	left:670px;
+	width:180px;
+	height:398px;
+	z-index:1;
+	background-image:url(../img/Icon/DRA_001_Icon_Right.png);	
+
+}
+
+
+
+#DRA_001_SW_LastMonth_nml {
+	position:absolute;
+	top:223px;
+	left:482px;
+	width:66px;
+	height:44px;
+	z-index:10;
+	background-image:url(../img/SW/nml/DRA_001_SW_LastMonth_nml.png);	
+
+}
+
+#DRA_001_SW_LastMonth_nml:active {
+	background-image:url(../img/SW/sel/DRA_001_SW_LastMonth_sel.png);	
+
+}
+
+#DRA_001_SW_LastMonth_dis {
+	position:absolute;
+	top:223px;
+	left:482px;
+	width:66px;
+	height:44px;
+	z-index:3;
+	background-image:url(../img/SW/dis/DRA_001_SW_LastMonth_dis.png);	
+	display:none;
+}
+
+#DRA_001_SW_NextMonth_nml {
+	position:absolute;
+	top:298px;
+	left:482px;
+	width:66px;
+	height:44px;
+	z-index:10;
+	background-image:url(../img/SW/nml/DRA_001_SW_NextMonth_nml.png);	
+
+}
+
+#DRA_001_SW_NextMonth_nml:active {
+
+	background-image:url(../img/SW/sel/DRA_001_SW_NextMonth_sel.png);	
+
+}
+
+#DRA_001_SW_NextMonth_dis {
+	position:absolute;
+	top:298px;
+	left:482px;
+	width:66px;
+	height:44px;
+	z-index:3;
+	background-image:url(../img/SW/dis/DRA_001_SW_NextMonth_dis.png);
+	display:none;	
+
+}
+
+#dummy_Down {
+	position:absolute;
+	top:450px;
+	left:0px;
+	width:980px;
+	height:138px;
+	z-index:4;
+	background-image:url(../img/dummy/dummy_Down.png);	
+
+}
+
+#dummy_down_score {
+    position:absolute;
+    top:475px;
+    left:-22px;
+    font: 39px "黑体";
+    /*width:980px;*/
+    /*height:138px;*/
+    color: white;
+    z-index:5;
+}
+#dummy_down_plus {
+    position:absolute;
+    top:490px;
+    left:150px;
+    font: 42px "黑体";
+    color: white;
+    z-index:5;
+}
+#dummy_down_plus ul,
+#dummy_down_score ul,
+#dummy_down_minus ul,
+#dummy_down_turn ul {
+    margin-bottom: 0;
+}
+
+#dummy_down_plus_time {
+    position:absolute;
+    top:446px;
+    left:220px;
+    font: 20px "黑体";
+    color: white;
+    line-height: 8px;
+    z-index:5;
+}
+#dummy_down_minus {
+    position:absolute;
+    top:495px;
+    left:371px;
+    font: 38px "黑体";
+    color:white;
+    z-index:5;
+}
+#dummy_down_minus_time {
+    position:absolute;
+    top:448px;
+    left:440px;
+    font: 19px "黑体";
+    color: white;
+    line-height: 8px;
+    z-index:5;
+}
+#dummy_down_turn {
+    position:absolute;
+    top:495px;
+    left:590px;
+    font: 38px "黑体";
+    color: white;
+    z-index:5;
+}
+#dummy_down_turn_time {
+    position:absolute;
+    top:448px;
+    left:650px;
+    font: 19px "黑体";
+    color: white;
+    line-height: 8px;
+    z-index:5;
+}
+#dummy_down_ave {
+    position:absolute;
+    top:442px;
+    left:815px;
+    font: 20px "黑体";
+    color: white;
+    line-height: 22px;
+    z-index:5;
+}
+
+
+#dummy_left_chart1 {
+    position:absolute;
+    top:80px;
+    left:20px;
+    z-index:8;
+
+}
+
+#dummy_left_date {
+	position:absolute;
+	top:346px;
+	left:56px;
+	width:419px;
+	height:32px;
+	z-index:4;
+	background-image:url(../img/dummy/dummy_left_date.png);	
+
+}
+
+#dummy_Middle {
+	position:absolute;
+	top:304px;
+	left:567px;
+	width:103px;
+	height:74px;
+	z-index:4;
+	background-image:url(../img/dummy/dummy_Middle.png);	
+
+}
+#dummy_Middle_score {
+    position:absolute;
+    top:240px;
+    left:520px;
+    font: 43px "黑体";
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia,
+    'New York', serif;
+    color: #33FFFF;
+    z-index:5;
+}
+#dummy_Right {
+	position:absolute;
+	top:110px;
+	left:850px;
+	width:130px;
+	height:287px;
+	z-index:4;
+	background-image:url(../img/dummy/dummy_Right.png);	
+
+}
+#dummy_Right_data {
+    position:absolute;
+    top:101px;
+
+    left:810px;
+    font: 21px "黑体";
+    font-family: Times, TimesNR, 'New Century Schoolbook', Georgia,
+    'New York', serif;
+    color:white;
+    line-height:46px;
+    z-index:5;
+}
+
+
+#timer_1{
+    position:absolute;
+    left:78px;
+    top:360px;
+    font-size: 10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_2{
+    position:absolute;
+    left:130px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_3{
+    position:absolute;
+    left:186px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_4{
+    position:absolute;
+    left:242px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_5{
+    position:absolute;
+    left:300px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_6{
+    position:absolute;
+    left:360px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}
+
+#timer_7{
+    position:absolute;
+    left:420px;
+    top:360px;
+    font-size:10px;
+    color:white;
+    z-index:10;
+}

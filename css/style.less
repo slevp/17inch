@@ -1,0 +1,536 @@
+@charset "utf-8";
+@import "basic";
+@import "topivi";
+@import "dialog-apps";
+@import "variables";
+@import "VR.css";
+#exit-btn {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  .width(50);
+  .height(50);
+  z-index: 1000;
+}
+#home-container {
+  .fill-parent;
+  background-image: url('@{img-base}/home/home_bg.png');
+  #home-mask {
+    .fill-parent;
+    z-index: 1;
+    background-image: url('@{img-base}/home/home_mask.png');
+  }
+  #home-mask-darker {
+    .fill-parent;
+    z-index: 3;
+    background-image: url('@{img-base}/home/home_mask_darker.png');
+  }
+  #header-container {
+    .flow-top(@header-height);
+    z-index: 4;
+    .top-veins {
+      .flow-top(@top-veins);
+      background-image: url('@{img-base}/home/home_top_veins.png');
+      z-index: 10;
+      p {
+        .font-size(14);
+        .padding-top(14, 14);
+        .line-height(22, 14);
+        text-align: center;
+        color: @top-color;
+      }
+    }
+    .voice-btn {
+      position: absolute;
+      .top(59);
+      .right(14);
+      .width(99);
+      .height(158);
+      background-image: url('@{img-base}/home/vrs_off.png');
+      z-index: 10;
+      &:active {
+        background-image: url('@{img-base}/home/vrs_on.png');
+      }
+    }
+    .header-clock {
+      .l-center(144);
+      .top(51);
+      .height(38);
+      z-index: 10;
+      &>div {
+        float: left;
+        height: 100%;
+        .width(24);
+        .margin-right(6);
+      }
+      &>div:last-child {
+        .margin-right(0);
+      }
+      .dot {
+        background-image: url('@{img-base}/numbers/time_point.png');
+      }
+      .dot.invisible {
+        visibility: hidden;
+      }
+      .number0 {
+        background-image: url('@{img-base}/numbers/0.png');
+      }
+      .number1 {
+        background-image: url('@{img-base}/numbers/1.png');
+      }
+      .number2 {
+        background-image: url('@{img-base}/numbers/2.png');
+      }
+      .number3 {
+        background-image: url('@{img-base}/numbers/3.png');
+      }
+      .number4 {
+        background-image: url('@{img-base}/numbers/4.png');
+      }
+      .number5 {
+        background-image: url('@{img-base}/numbers/5.png');
+      }
+      .number6 {
+        background-image: url('@{img-base}/numbers/6.png');
+      }
+      .number7 {
+        background-image: url('@{img-base}/numbers/7.png');
+      }
+      .number8 {
+        background-image: url('@{img-base}/numbers/8.png');
+      }
+      .number9 {
+        background-image: url('@{img-base}/numbers/9.png');
+      }
+    }
+    .header-safe-distance {
+      .l-center(416);
+      .top(111);
+      .height(153);
+      z-index: 2;
+      &>div {
+        position: absolute;
+        left: 50%;
+      }
+      .right-top,
+      .left-top {
+        .width(103);
+        .height(96);
+        .top(32);
+      }
+      .left-middle,
+      .right-middle {
+        .width(96);
+        .height(86);
+        .top(55);
+      }
+      .left-bottom,
+      .right-bottom {
+        .width(86);
+        .height(76);
+        .top(77);
+      }
+      .left-top {
+        .margin-left(-205.4);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_top.png');
+      }
+      .left-top.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_top_brighter.png');
+      }
+      .left-middle {
+        .margin-left(-185.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_middle.png');
+      }
+      .left-middle.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_middle_brighter.png');
+      }
+      .left-bottom {
+        .margin-left(-165.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_down.png');
+      }
+      .left-bottom.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_left_down_brighter.png');
+      }
+      .right-top {
+        .margin-left(102.4);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_top.png');
+      }
+      .right-top.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_top_brighter.png');
+      }
+      .right-middle {
+        .margin-left(89.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_middle.png');
+      }
+      .right-middle.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_middle_brighter.png');
+      }
+      .right-bottom {
+        .margin-left(79.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_down.png');
+      }
+      .right-bottom.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_right_down_brighter.png');
+      }
+      .center-top {
+        .width(200);
+        .height(47);
+        .margin-left(-100);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_top.png');
+      }
+      .center-top.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_top_brighter.png');
+      }
+      .center-middle {
+        .width(179);
+        .height(41);
+        .top(29);
+        .margin-left(-89.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_middle.png');
+      }
+      .center-middle.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_middle_brighter.png');
+      }
+      .center-bottom {
+        .width(159);
+        .height(35);
+        .top(55);
+        .margin-left(-79.5);
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_down.png');
+      }
+      .center-bottom.brighter {
+        background-image: url('@{img-base}/home/safe-distance/home_safediatance_middle_down_brighter.png');
+      }
+    }
+    .big-info {
+      position: absolute;
+      .top(74);
+      .left(20);
+      .width(146);
+      &>div {
+        .height(65);
+        .margin-bottom(5);
+        &:last-child {
+          .margin-bottom(0);
+        }
+      }
+      .maintain {
+        background-image: url('@{img-base}/home/info/home_maintain.png');
+      }
+      .drive {
+        background-image: url('@{img-base}/home/info/home_drive.png');
+      }
+      .maintain,
+      .drive {
+        .width(92);
+        .height(37);
+        .padding(28, 43, 0 , 11);
+        &>div {
+          float: left;
+          .width(14);
+          .height(30);
+          .margin-right(1);
+          &:last-child {
+            .margin-right(0);
+          }
+        }
+        .dot {
+          .width(2);
+          .height(2);
+          .margin-top(28);
+          background-image: url('@{img-base}/small-numbers/home_speed_number_point.png');
+        }
+        .number0 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number0.png');
+        }
+        .number1 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number1.png');
+        }
+        .number2 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number2.png');
+        }
+        .number3 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number3.png');
+        }
+        .number4 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number4.png');
+        }
+        .number5 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number5.png');
+        }
+        .number6 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number6.png');
+        }
+        .number7 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number7.png');
+        }
+        .number8 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number8.png');
+        }
+        .number9 {
+          background-image: url('@{img-base}/small-numbers/home_speed_number9.png');
+        }
+      }
+      .weather {
+        .height(42);
+        .padding-top(65 - 42);
+        background-image: url('@{img-base}/home/info/home_weather.png');
+        .icon {
+          float: left;
+          .width(45);
+          .height(42);
+          .margin-left(9);
+        }
+        .data {
+          float: right;
+          .width(146 - 54);
+          color: @color-one;
+          text-align: center;
+
+          .temperature {
+            .font-size(24);
+            .line-height(24, 24);
+          }
+          .status {
+            .font-size(14);
+            .line-height(18, 14);
+          }
+        }
+      }
+    }
+    .wheel-press {
+      .l-center(594);
+      .height(376);
+      .top(276 + @top-veins);
+      background-image: url('@{img-base}/home/car/home_wheelpress_24.png');
+    }
+    .car-container {
+      .flow-top(525, 209);
+      background-image: url('@{img-base}/home/car2.0/home_BG_earth_32.png');
+      background-repeat: repeat-x;
+      .background-size(768, 355);
+      .background-position(0, 315 - 209);
+      -webkit-animation: bg-moving-right 120s infinite linear;
+      .car {
+        .l-center(259);
+        .height(525);
+        background-image: url('@{img-base}/home/car2.0/home_car_brighter_26.png');
+
+        &.dark {
+          background-image: url('@{img-base}/home/car2.0/home_car_darker_26.png');
+        }
+      }
+    }
+    .alarms {
+      .flow-bottom(44, 70 - 44);
+      .left {
+        .l-center(156, -216);
+        height: 100%;
+      }
+      .right {
+        .r-center(156, -216);
+        height: 100%;
+      }
+      .left>div,
+      .right>div {
+        float: left;
+        .width(44);
+        .height(44);
+        .margin-right(12);
+        &:last-child {
+          .margin-right(0);
+        }
+      }
+      .front-fog {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_frontfog.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_frontfog.png');
+        }
+      }
+      .stop {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_stop.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_stop.png');
+        }
+      }
+      .big-light {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_biglight.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_biglight.png');
+        }
+      }
+      .key {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_key.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_key.png');
+        }
+      }
+      .abs {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_abs.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_abs.png');
+        }
+      }
+      .back-fog {
+        background-image: url('@{img-base}/home/car2.0/home_information_alarm_normal_backfog.png');
+        &.active {
+          background-image: url('@{img-base}/home/car2.0/home_information_alarm_down_backfog.png');
+        }
+      }
+    }
+    .bg {
+      .fill-parent;
+      background-image: url('@{img-base}/home/phone_bg_top.png');
+      display: block;
+      .small-info {
+        position: absolute;
+        .top(29 + @top-veins);
+        .left(20);
+        .width(169);
+        &>div {
+          .height(102);
+          .margin-bottom(17);
+          &:last-child {
+            .margin-bottom(0);
+          }
+        }
+        .tips {
+          background-image: url('@{img-base}/home/info/car_tips.png');
+        }
+        .press {
+          .width(83);
+          .height(47);
+          .padding(55, 45, 0, 41);
+          background-image: url('@{img-base}/home/info/car_press.png');
+          .wheel {
+            height: 100%;
+            width: 100%;
+            background-image: url('@{img-base}/home/info/car_wheel_down.png');
+            &.up {
+              background-image: url('@{img-base}/home/car_wheel_up.png');
+            }
+          }
+        }
+      }
+    }
+  }
+  #app-container {
+    position: absolute;
+    .top(@header-height);
+    .bottom(@footer-height);
+    width: 100%;
+    z-index: 3;
+    iframe {
+      .fill-parent;
+      .no-box();
+      width: 100%;
+      height: 100%;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  #footer-container {
+    z-index: 3;
+    .flow-bottom(260);
+    #footer-nav {
+      .flow-top(65);
+      ul {
+        height: 100%;
+      }
+      li {
+        float: left;
+        display: block;
+        .width(84);
+        height: 100%;
+        margin-right: 1px;
+        background-image: url('@{img-base}/nav-apps/home_button_normal.png');
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active,
+        &:active {
+          background-image: url('@{img-base}/nav-apps/home_button_focus.png');
+        }
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          img {
+            display: block;
+            .width(49);
+            .height(49);
+            margin: 0 auto;
+            .margin-top(8);
+            .margin-bottom(8);
+          }
+        }
+      }
+    }
+    #footer-apps {
+      position: absolute;
+      .top(65);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .margin(7, 6);
+      #left-container,
+      #right-container {
+        position: absolute;
+        height: 100%;
+        .no-box();
+      }
+      #left-container {
+        left: 0;
+        width: 66%;
+        margin-right: 1%;
+        background-image: url('@{img-base}/home/footer_app_left_bg.png');
+      }
+      #right-container {
+        right: 0;
+        width: 33%;
+        background-image: url('@{img-base}/home/footer_app_right_bg.png');
+      }
+      #left-container,
+      #right-container {
+        &.expanded {
+          width: 100%;
+          background-image: url('@{img-base}/home/footer_app_both_bg.png');
+        }
+        &.hide {
+          width: 0;
+        }
+        iframe {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          .no-box();
+        }
+      }
+    }
+  }
+  &.no-app {
+    #header-container {
+      height: auto;
+      .bottom(@footer-height);
+    }
+    #app-container {
+      display: none;
+    }
+  }
+}
+.tips.alarm-tips {
+  .width(142, 24);
+  .height(83, 24);
+  .margin-left(-10, 24);
+  .font-size(24);
+  .line-height(64, 24);
+  color: @color-one;
+  text-align: center;
+  background-image: url('@{img-base}/home/car2.0/home_tishi.png');
+}
+.loading .notice .icon {
+  background-image: url('@{img-base}/loading.png');
+}

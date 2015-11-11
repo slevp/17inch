@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Picture_sel {
+	width:194px;
+	height:196px;
+	background-image:url(../img/DLN/SW/sel/DLN_003_SW_Picture_sel.png);
+}
+#Music_sel img{
+    position: absolute;
+    top: 236px;
+    left: 38px;
+    width:115px;
+    height:115px;
+    z-index: 20;
+}
+#Video_sel img{
+    position: absolute;
+    top: 40px;
+    left: 38px;
+    width:115px;
+    height:115px;
+    z-index: 20;
+}
+
+#Picture_sel img{
+    position: absolute;
+    top: 432px;
+    left: 38px;
+    width:115px;
+    height:115px;
+    z-index: 20;
+}
+
+
+#SelectedIcon3 {
+    float: left;
+    width:37px;
+    height:588px;
+    background:url(../img/DLN/Icon/DLN_003_Icon_SelectedIcon.png) no-repeat 0 469px;
+}
+
+

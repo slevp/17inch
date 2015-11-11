@@ -1,0 +1,436 @@
+@import '../../../css/basic';
+
+
+.page {
+  .fill-parent;
+  display: none;
+  &.home {
+    background-color: black;
+    .main {
+      .all-center(110 * 5 + 32 * 4 + 5 , 110 * 3 + 32 * 2);
+      overflow: visible;
+      .tag {
+        float: left;
+        .width(108);
+        .height(108);
+        .margin-right(32);
+        .margin-bottom(32);
+        border: 1px solid #3ad9df;
+        &:nth-child(5n) {
+          .margin-right(0);
+        }
+        .checkTag {
+            position: relative;
+            .width(21);
+            .height(21);
+            .left(87);
+            .top(87);
+            background-image: url("../img/select_14.png");
+          }
+      }
+      .moreTag {
+        float: left;
+        .width(108);
+        .height(108);
+        .margin-right(32);
+        border: 1px solid #3ad9df;
+        &:nth-child(2n) {
+          .margin-right(0);
+        }
+        .checkTag {
+            position: relative;
+            .width(21);
+            .height(21);
+            .left(87);
+            .top(87);
+            background-image: url("../img/select_14.png");
+          }
+
+      }
+      .update-btn {
+        position: relative;
+        .left(178);
+        .width(110);
+        .height(39);
+        background-image: url("../img/none_icon_rec.png");
+        &.active {
+          background-image: url("../img/nml_icon_rec.png");
+        }
+      }
+      .appointment-btn {
+        position: absolute;
+        .right(142);
+        .bottom(1);
+        .width(110);
+        .height(39);
+        background-image: url("../img/nml_icon_book.png");
+      }
+      .shop-btn {
+        position: absolute;
+        .right(1);
+        .width(110);
+        .height(39);
+        .bottom(1);
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+        }
+        .btn-img {
+          .width(110);
+          .height(39);
+          background-image: url("../img/exe_icon_4s.png");
+          &:active {
+            background-image: url("../img/nml_icon_4s.png");
+          }
+        }
+      }
+    }}
+  &.shop {
+    background-image: url("../img/4S_bg.png");
+    .repair-page {
+      .all-center(522 - 57 + 205,635 - 417 + 44);
+      .width(522 - 57 + 205);
+      .height(635 - 417 + 44);
+      float: right;
+      .my-shop {
+        .width(522 - 57 + 205);
+        .height(27);
+        .my-icon {
+          float: left;
+          .width(25);
+          .height(27);
+          background-image: url("../img/4S_home.png");
+        }
+        .my-title {
+          float: left;
+          .margin-left(10);
+          .height(27);
+          .width(88);
+          .line-height(27);
+          .font-size(20);
+          color: #339396;
+        }
+        .stop-information {
+          float: left;
+          .line-height(27);
+          .font-size(18);
+          color: #339396;
+
+        }
+      }
+      .column {
+        float: left;
+        .width(465);
+        .height(44);
+        .margin-top(36);
+        .icon {
+          float: left;
+          .margin-top(6);
+          .width(25);
+          .height(27);
+
+        }
+        .title {
+          float: left;
+          .height(44, 20);
+          .width(87, 20);
+          .line-height(44, 20);
+          .font-size(20);
+          .margin-left(10);
+          color: #339396;
+        }
+        .information {
+          float: left;
+          .width(328, 18);
+          .height(44, 18);
+          .line-height(44, 18);
+          background-image: url("../img/4S_line.png");
+          .font-size(18);
+          color: #86edf0;
+          text-indent: 20px;
+          .phone-icon {
+            position: relative;
+            .bottom(0);
+            .right(0);
+            .width(71);
+            .height(44);
+            background-image: url("../img/4S_phone_nml.png");
+          }
+
+        }
+        .phone-icon {
+          position: relative;
+          .right(0);
+          .width(71);
+          .height(48);
+
+          background-image: url("../img/4S_phone_nml.png");
+        }
+      }
+      .map {
+        position: absolute;
+        .bottom(0);
+        .right(0);
+        .width(205);
+        .height(205);
+        background-image: url("../img/4S_map.png");
+        .go-btn {
+          position: relative;
+          .left(82);
+          .top(160);
+          .width(120);
+          .height(45);
+          background-image: url("../img/4S_go_exe.png");
+        }
+      }
+    }
+  }
+  &.information {
+    background-image: url("../img/4S_bg.png");
+    .content {
+        .all-center(108 * 5 + 5, 528 - 381 + 206 + 44  );
+        overflow: visible;
+        .head {
+          .height(108);
+          .width(108 * 5 + 5);
+          float: right;
+          .tag {
+            float: left;
+            .width(108);
+            .height(108);
+            margin-right:1px;
+          }
+          .box {
+            position: absolute;
+            .left(218);
+            .top(-1);
+            .width(108);
+            .height(108);
+            background-image: url("../img/circle_03.png");
+          }
+        }
+        .foot {
+          .bottom(0);
+          .height(216 + 44);
+          .l-center(486);
+          .item {
+            float: left;
+            .width(486);
+            .height(54);
+            .margin-top(10);
+            .text{
+              float: left;
+              .width(120, 20);
+              .height(44, 20);
+              .font-size(20);
+              .line-height(44, 20);
+              color: #339396;
+
+            }
+            .semicolon {
+              float: left;
+              .width(38, 20);
+              .height(44, 20);
+              .font-size(20);
+              .line-height(44, 20);
+              color: #339396;
+              text-align: center;
+            }
+            .textbox {
+              float: right;
+              .width(328, 18);
+              .height(44, 18);
+              .font-size(18);
+              text-indent: 20px;
+              color: #86edf0;
+              background-image: url("../img/MAS_line.png");
+              .line-height(44);
+            }
+          }
+        }
+      }
+    }
+  &.active {
+    display: block;
+  }
+}
+
+.engine{
+  background-image: url("../img/RM_03.png");
+  &.no-present {
+    background-image: url("../img/rm_red_03.png");
+  }
+  &.now{
+    bottom: 1px;
+  }
+}
+.fuel{
+  background-image: url("../img/RM_05.png");
+  &.no-present {
+    background-image: url("../img/rm_red_05.png");
+  }
+}
+.cartridge{
+  background-image: url("../img/RM_07.png");
+  &.no-present {
+    background-image: url("../img/rm_red_07.png");
+  }
+  &.now {
+    border: 1px;
+    border-color: #07b2b7;
+  }
+}
+.tyre {
+  background-image: url("../img/RM_09.png");
+  &.no-present {
+    background-image: url("../img/rm_red_09.png");
+  }
+}
+.cell {
+  background-image: url("../img/RM_11.png");
+  &.no-present {
+    background-image: url("../img/rm_red_11.png");
+  }
+}
+.break{
+  background-image: url("../img/RM_18.png");
+  &.no-present {
+    background-image: url("../img/rm_red_18.png");
+  }
+}
+.brush{
+  background-image: url("../img/RM_19.png");
+  &.no-present {
+    background-image: url("../img/rm_red_19.png");
+  }
+}
+.refrigerator{
+  background-image: url("../img/RM_20.png");
+  &.no-present {
+    background-image: url("../img/rm_red_20.png");
+  }
+}
+.brake-oil{
+  background-image: url("../img/RM_21.png");
+  &.no-present {
+    background-image: url("../img/rm_red_21.png");
+  }
+
+}
+.transmission-oil {
+  background-image: url("../img/RM_22.png");
+  &.no-present {
+    background-image: url("../img/rm_red_22.png");
+  }
+}
+.service {
+  background-image: url("../img/RM_28.png");
+  &.no-present {
+    background-image: url("../img/rm_red_28.png");
+  }
+}
+.filtration {
+  background-image: url("../img/RM_29.png");
+  &.no-present {
+    background-image: url("../img/rm_red_29.png");
+  }
+}
+.check {
+  background-image: url("../img/select_14.png");
+}
+.back {
+  position: absolute;
+  .left(18);
+  .top(18);
+  .width(40);
+  .height(29);
+  background-image: url("../img/4S_left.png");
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+}
+
+#my-icon {
+  background-image: url("../img/4S_home.png");
+}
+#saler-icon {
+  background-image: url("../img/4S_saler.png");
+}
+#phone-icon {
+  background-image: url("../img/4S_phone.png");
+}
+#address-icon {
+  background-image: url("../img/4S_location.png");
+}
+
+.information-page {
+  .fill-parent;
+  background-image: url("../img/4S_bg.png");
+  .content {
+    .all-center(108 * 5 + 5, 528 - 381 + 206 + 44  );
+    overflow: visible;
+    .head {
+      .height(108);
+      .width(108 * 5 + 5);
+      float: right;
+      .tag {
+        float: left;
+        .width(108);
+        .height(108);
+        margin-right:1px;
+      }
+      .box {
+        position: absolute;
+        .left(218);
+        .top(-1);
+        .width(108);
+        .height(108);
+        background-image: url("../img/circle_03.png");
+      }
+    }
+    .foot {
+      .bottom(0);
+      .height(216 + 44);
+      .l-center(486);
+      .item {
+        float: left;
+        .width(486);
+        .height(54);
+        .margin-top(10);
+        .text{
+          float: left;
+          .width(120, 20);
+          .height(44, 20);
+          .font-size(20);
+          .line-height(44, 20);
+          color: #339396;
+
+        }
+        .semicolon {
+          float: left;
+          .width(38, 20);
+          .height(44, 20);
+          .font-size(20);
+          .line-height(44, 20);
+          color: #339396;
+          text-align: center;
+        }
+        .textbox {
+          float: right;
+          .width(328, 18);
+          .height(44, 18);
+          .font-size(18);
+          text-indent: 20px;
+          color: #86edf0;
+          background-image: url("../img/MAS_line.png");
+          .line-height(44);
+        }
+      }
+    }
+  }
+}
